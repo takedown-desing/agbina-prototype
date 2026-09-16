@@ -1,0 +1,478 @@
+{
+ "home_desktop": {
+  "status": "ok",
+  "secs": 19.2,
+  "height": 3259,
+  "pending_imgs": 6,
+  "map_text": false,
+  "map_iframe_or_canvas": true,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [
+   [
+    "https://api-maps.yandex.ru/2.1.79/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/full.js",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grabbing.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/help.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/zoom_in.cur",
+    200
+   ],
+   [
+    "https://log.api-maps.yandex.ru/services/logging/watch/104153047/1?page-url=https%3A%2F%2Fagbina.ru&charset=utf-8&site-in",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur",
+    200
+   ]
+  ],
+  "cookie_banner_visible": false
+ },
+ "catalog_desktop": {
+  "status": "ok",
+  "secs": 13.1,
+  "height": 8428,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "product_desktop": {
+  "status": "ok",
+  "secs": 8.5,
+  "height": 2109,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+   "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+  ],
+  "failed": [
+   [
+    "https://mdd.yandex.net/",
+    "net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   [
+    "https://hdrc.yandex.net/",
+    "net::ERR_CERT_AUTHORITY_INVALID"
+   ]
+  ],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "promo-petunia_desktop": {
+  "status": "ok",
+  "secs": 7.2,
+  "height": 2008,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "opt_desktop": {
+  "status": "ok",
+  "secs": 6.0,
+  "height": 1583,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "brands_desktop": {
+  "status": "ok",
+  "secs": 5.9,
+  "height": 2135,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "company_desktop": {
+  "status": "ok",
+  "secs": 7.1,
+  "height": 2821,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "contacts_desktop": {
+  "status": "ok",
+  "secs": 7.0,
+  "height": 2414,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": true,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [
+   [
+    "https://api-maps.yandex.ru/2.1.79/?lang=ru_RU",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/full.js",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/help.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grabbing.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/zoom_in.cur",
+    200
+   ],
+   [
+    "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.09.12-0~b:260910150900~ia:26.08.12-0~ib:26.09.16-2&x=79302&",
+    200
+   ],
+   [
+    "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.09.12-0~b:260910150900~ia:26.08.12-0~ib:26.09.16-2&x=79301&",
+    200
+   ]
+  ],
+  "cookie_banner_visible": false
+ },
+ "sroki_desktop": {
+  "status": "ok",
+  "secs": 7.3,
+  "height": 3019,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "TypeError: Cannot set properties of undefined (setting 'onclick')\n    at application.load.name (https://agbina.ru/help/sroki_dostavki_zakaza/:3359:26)\n    at p "
+  ],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "prices_desktop": {
+  "status": "ok",
+  "secs": 6.2,
+  "height": 2607,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "kak-rabotat_desktop": {
+  "status": "ok",
+  "secs": 8.2,
+  "height": 6930,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "TypeError: Cannot set properties of undefined (setting 'onclick')\n    at application.load.name (https://agbina.ru/help/kak_rabotat_s_onlayn_katalogom/:3561:26)\n"
+  ],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "news_desktop": {
+  "status": "ok",
+  "secs": 5.5,
+  "height": 2061,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "basket_desktop": {
+  "status": "ok",
+  "secs": 7.9,
+  "height": 1507,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "home_mobile": {
+  "status": "ok",
+  "secs": 19.4,
+  "height": 4082,
+  "pending_imgs": 5,
+  "map_text": false,
+  "map_iframe_or_canvas": true,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [
+   [
+    "https://api-maps.yandex.ru/2.1.79/?load=package.full&mode=release&lang=ru-RU&wizard=bitrix",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/full.js",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grabbing.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/help.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/zoom_in.cur",
+    200
+   ],
+   [
+    "https://api-maps.yandex.ru/services/coverage/v2/?l=map&ll=37.81011200,55.93472600&z=16&lang=ru_RU&callback=jsonp_yandex_",
+    200
+   ],
+   [
+    "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.09.12-0~b:260910150900~ia:26.08.12-0~ib:26.09.16-2&x=39651&",
+    200
+   ]
+  ],
+  "cookie_banner_visible": false
+ },
+ "catalog_mobile": {
+  "status": "ok",
+  "secs": 20.3,
+  "height": 27323,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "product_mobile": {
+  "status": "ok",
+  "secs": 11.4,
+  "height": 3585,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID",
+   "Failed to load resource: net::ERR_CERT_AUTHORITY_INVALID"
+  ],
+  "failed": [
+   [
+    "https://mdd.yandex.net/",
+    "net::ERR_CERT_AUTHORITY_INVALID"
+   ],
+   [
+    "https://hdrc.yandex.net/",
+    "net::ERR_CERT_AUTHORITY_INVALID"
+   ]
+  ],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "promo-petunia_mobile": {
+  "status": "ok",
+  "secs": 8.3,
+  "height": 2980,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "opt_mobile": {
+  "status": "ok",
+  "secs": 6.1,
+  "height": 2754,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "brands_mobile": {
+  "status": "ok",
+  "secs": 8.2,
+  "height": 4184,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "company_mobile": {
+  "status": "ok",
+  "secs": 7.1,
+  "height": 4449,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "contacts_mobile": {
+  "status": "ok",
+  "secs": 6.5,
+  "height": 3491,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": true,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [
+   [
+    "https://api-maps.yandex.ru/2.1.79/?lang=ru_RU",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/full.js",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grab.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/help.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/grabbing.cur",
+    200
+   ],
+   [
+    "https://yastatic.net/s3/front-maps-static/maps-front-jsapi-v2-1/2.1.79-19906405/out/release/images/cursor/zoom_in.cur",
+    200
+   ],
+   [
+    "https://core-renderer-tiles.maps.yandex.net/tiles?l=map&v=26.09.12-0~b:260910150900~ia:26.08.12-0~ib:26.09.16-2&x=79302&",
+    200
+   ],
+   [
+    "https://yandex.ru/clck/counter/dtype=stred/pid=443/cid=72793/path=promo.visible.350x250/rnd=1789566014690/*https://yande",
+    200
+   ]
+  ],
+  "cookie_banner_visible": false
+ },
+ "sroki_mobile": {
+  "status": "ok",
+  "secs": 7.6,
+  "height": 4753,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "TypeError: Cannot set properties of undefined (setting 'onclick')\n    at application.load.name (https://agbina.ru/help/sroki_dostavki_zakaza/:3359:26)\n    at p "
+  ],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "prices_mobile": {
+  "status": "ok",
+  "secs": 6.5,
+  "height": 4191,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "kak-rabotat_mobile": {
+  "status": "ok",
+  "secs": 9.7,
+  "height": 9061,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [
+   "TypeError: Cannot set properties of undefined (setting 'onclick')\n    at application.load.name (https://agbina.ru/help/kak_rabotat_s_onlayn_katalogom/:3561:26)\n"
+  ],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "news_mobile": {
+  "status": "ok",
+  "secs": 7.6,
+  "height": 3864,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ },
+ "basket_mobile": {
+  "status": "ok",
+  "secs": 8.4,
+  "height": 2073,
+  "pending_imgs": 0,
+  "map_text": false,
+  "map_iframe_or_canvas": false,
+  "console_errors": [],
+  "failed": [],
+  "map_requests": [],
+  "cookie_banner_visible": false
+ }
+}
