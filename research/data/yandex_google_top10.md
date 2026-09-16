@@ -1,6 +1,6 @@
 # Выдача: ТОП-10 Яндекса (Keys.so check-top, база Москва) и Google (Ahrefs SERP overview, RU)
 
-Дата: 16 сентября 2026. Keys.so вернул ТОП по 14 из 52 запросов (остальных нет в базе). Google: Ahrefs SERP overview по 8 запросам; по «семена для питомников» и «семена benary» Ahrefs выдачу не вернул.
+Keys.so вернул ТОП по 14 из 52 запросов (остальных нет в базе). Google: Ahrefs SERP overview по 8 запросам; по «семена для питомников» и «семена benary» Ahrefs выдачу не вернул.
 
 ## Яндекс, Москва (Keys.so)
 
@@ -308,7 +308,7 @@
 | 9 | 0.0 | https://solo-semena.ru/index.php?cPath=24 | семена цветов профессиональные - СОЛО |
 | 10 | 19.0 | https://sibseed.ru/catalog/semena/professionalnye_semena_tsvetov/ | Профессиональные семена цветов в интернет-магазине с ... |
 
-## Arsenkin check-top: ТОП-10 по 67 запросам (16.09.2026)
+## Arsenkin check-top: ТОП-10 по 67 запросам
 
 Список запросов: `queries_serp.json`. Полные выгрузки: `arsenkin_checktop_ya_msk.json`, `arsenkin_checktop_g_msk.json`. Сводка: `arsenkin_summary.json`.
 
