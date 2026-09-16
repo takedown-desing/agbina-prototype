@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Прототип: Главная. Агбина: профессиональные семена оптом для питомников, садовых центров и озеленения</title>
+<meta name="description" content="Прототип главной страницы agbina.ru: H1 и оффер для оптовика, разделы каталога с числом позиций, семена со склада с ценой за 1 000 шт, два способа покупки, скидки по обороту, производители, доставка, FAQ, форма «отправить список».">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23E58A0B%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EА%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/styles.css?v=1">
+</head>
+<body>
+
+<!-- Панель прототипа -->
+<div class="proto-bar">
+  <span class="pb-title">Прототип «Агбина»</span>
+  <nav>
+    <a href="../index.html">Обзор</a>
+    <a href="home.html">Главная</a>
+    <a href="../rationale.html">Обоснование блоков</a>
+  </nav>
+  <div class="pb-legend">
+    <span><i style="background:#6B7280"></i>Существующий блок</span>
+    <span><i style="background:#15803D"></i>Новый: по исследованию</span>
+    <button class="pb-toggle" data-toggle-tags>Скрыть пометки</button>
+  </div>
+</div>
+
+<!-- 1. Верхняя полоса -->
+<div class="topbar blk" id="top" data-tag="res" data-label="Новый блок: по результатам исследования. Адрес склада, режим, почта и условие «юрлица и КФХ по договору» в одну строку (agroopt-market.ru, optom.semena-tut.ru)">
+  <div class="container">
+    <span>Королёв, ул. Северная, д. 8</span>
+    <span class="hide-m">Пн-Пт 9:00-19:00</span>
+    <a class="hide-m" href="mailto:info@agbina.com">info@agbina.com</a>
+    <span class="grow"></span>
+    <span class="direct hide-m">Работаем с юридическими лицами и фермерскими хозяйствами по договору</span>
+    <a href="#buy">Как купить</a>
+    <a href="#">Прайс-лист</a>
+  </div>
+</div>
+
+<!-- 1а. Шапка -->
+<header class="header blk" data-tag="mix" data-label="Существующий блок + новое: меню под маршрут оптовика (Как купить, Оптовикам, Доставка), Telegram и WhatsApp, кнопка «Отправить список» вместо «Заказать звонок»">
+  <div class="container">
+    <a class="logo" href="home.html"><img src="../assets/img/logo.png" alt="Агбина"><span>Профессиональные семена оптом</span></a>
+    <nav class="hnav">
+      <a href="#catalog">Каталог</a>
+      <a href="#brands">Производители</a>
+      <a href="#buy">Как купить</a>
+      <a href="#discount">Оптовикам</a>
+      <a href="#delivery">Доставка</a>
+      <a href="#why">Компания</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <div class="hdr-phone"><b>8 (495) 516-53-18</b><span>отдел продаж, Пн-Пт 9:00-19:00</span></div>
+    <div class="msgs">
+      <a class="msg tg" href="#" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.47 8.7 19.6c.5 0 .72-.22.98-.48l2.36-2.26 4.9 3.58c.9.5 1.54.24 1.78-.83l3.22-15.1c.3-1.32-.48-1.84-1.35-1.5L2.6 10.3c-1.3.5-1.28 1.22-.22 1.55l4.84 1.5L18.5 6.3c.53-.35 1.02-.16.62.2z"/></svg></a>
+      <a class="msg wa" href="#" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3c.2-.6.2-1.1.2-1.2l-.5-.3z"/></svg></a>
+    </div>
+    <a class="btn btn-primary" href="#" data-ask data-ask-title="Отправить список семян" data-ask-sub="Приложите файл или напишите сорта и количество, ответим по наличию и цене в течение рабочего дня">Отправить список</a>
+    <a class="msg" href="#" title="Корзина"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></a>
+    <button class="burger" data-open-menu aria-label="Меню"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+  </div>
+</header>
+
+<div class="drawer">
+  <div class="panel">
+    <button class="close" data-close-menu aria-label="Закрыть">✕</button>
+    <h4>Каталог</h4>
+    <a href="#catalog">Однолетние и двулетние</a><a href="#catalog">Многолетники</a><a href="#catalog">Деревья и кустарники</a><a href="#catalog">Хвойные</a><a href="#catalog">Пальмы, папоротники, суккуленты</a><a href="#catalog">Все разделы</a>
+    <h4>Покупателям</h4>
+    <a href="#buy">Как купить</a><a href="#discount">Оптовикам: скидки</a><a href="#delivery">Доставка и оплата</a><a href="#">Прайс-лист</a><a href="#faq">Вопросы и ответы</a>
+    <h4>Компания</h4>
+    <a href="#why">О компании</a><a href="#brands">Производители</a><a href="#news">Новости</a><a href="#contacts">Контакты</a>
+    <h4>Связь</h4>
+    <a href="tel:84955165318">8 (495) 516-53-18</a><a href="mailto:info@agbina.com">info@agbina.com</a><a href="#">Telegram</a><a href="#">WhatsApp</a>
+  </div>
+</div>
+
+<!-- 2. Первый экран -->
+<section class="hero blk" id="hero" data-tag="res" data-label="Новый блок: по результатам исследования. H1 с «профессиональные семена» и «оптом» (20 087 и 13 970 показов в месяц), для кого, три факта и форма «отправить список» вместо слайдера из шести сортов">
+  <div class="container">
+    <div>
+      <span class="geo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Склад в Королёве, отгрузка по всей России</span>
+      <h1>Профессиональные семена оптом для питомников, садовых центров и озеленения</h1>
+      <p class="lead">Около 11 000 позиций: цветы, деревья и кустарники, хвойные, пальмы, суккуленты и редкие растения от Benary, PanAmerican, Syngenta, Hem Genetics, Kieft Seed, Takii и других селекционеров. Цена за 1 000 семян или 1 г, минимальный заказ указан у каждого сорта.</p>
+      <div class="bullets">
+        <div class="bullet"><b>Юрлица и КФХ</b><span>Договор, счёт, закрывающие документы, скидка до 15 % по обороту</span></div>
+        <div class="bullet"><b>Со склада или под заказ</b><span>Наличие в Подмосковье сейчас, предзаказ у производителей с поставкой 1 октября — 1 марта</span></div>
+        <div class="bullet"><b>Подбор и замены</b><span>Агроном подберёт сорта под задачу и предложит замену, если позиции нет</span></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary btn-lg" href="#catalog">Открыть каталог</a>
+        <a class="btn btn-light btn-lg" href="#" data-ask data-ask-title="Отправить список семян" data-ask-sub="Приложите файл или напишите сорта и количество">Отправить список</a>
+        <span class="note">Ответ по наличию и цене в течение рабочего дня</span>
+      </div>
+    </div>
+    <form class="hero-form" data-done="Список принят, ответим по наличию и цене в течение рабочего дня">
+      <h3>Пришлите список семян</h3>
+      <div class="sub">Проверим наличие, посчитаем цену с вашей скидкой и предложим замены</div>
+      <div class="row2"><label class="field"><input type="text" placeholder="Организация" required></label><label class="field"><input type="text" placeholder="Имя"></label></div>
+      <div class="row2"><label class="field"><input type="tel" placeholder="Телефон" required></label><label class="field"><input type="email" placeholder="E-mail для счёта"></label></div>
+      <label class="field"><textarea rows="3" placeholder="Сорта и количество: например, Петуния Baby Gioconda F1 — 5 000 шт, Виола Xtrada — 2 000 шт"></textarea></label>
+      <label class="field"><input type="file" aria-label="Файл списка"></label>
+      <button class="btn btn-primary btn-block" type="submit">Отправить список</button>
+      <div class="reply-note"><i></i>Ответим в течение рабочего дня, Пн-Пт 9:00-19:00</div>
+      <div class="consent">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</div>
+    </form>
+  </div>
+</section>
+
+<!-- 3. Полоса цифр -->
+<div class="trust-strip blk" id="facts" data-tag="res" data-label="Новый блок: по результатам исследования. Цифры компании вместо четырёх шаблонных иконок («7 аргументов» semena-tut.ru, «Главное — забота о клиентах» semco.ru)">
+  <div class="container">
+    <div class="item"><b>11 000</b><span>позиций в онлайн-каталоге: 220 страниц по 50 сортов</span></div>
+    <div class="item"><b>11</b><span>производителей: Benary, PanAmerican, Syngenta, Hem Genetics, Kieft Seed, Takii, Floranova, Cerny, Farao, Evanthia, Murakami</span></div>
+    <div class="item"><b>4</b><span>профессиональные ассоциации: ISF, Fleuroselect, АНСК, АППМ (с 2011 года)</span></div>
+    <div class="item"><b>до 15 %</b><span>скидка по обороту за сезон, 5 % членам АППМ</span></div>
+    <div class="item"><b><span class="fill">с 19__</span></b><span>год основания и число клиентов-питомников заполняет клиент</span></div>
+  </div>
+</div>
+
+<!-- 4. Разделы каталога -->
+<section class="section blk" id="catalog" data-tag="res" data-label="Новый блок: по результатам исследования. Входы в каталог по 11 разделам с числом позиций (плитки с количеством у agroopt-market.ru, 8 плиток semena-tut.ru) вместо ссылки «Каталог» в меню">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Каталог</span><h2>Разделы каталога</h2><p>Те же 11 разделов, что в онлайн-каталоге, с числом позиций. Цена за 1 000 семян или 1 г, минимальный заказ, остаток и форма семян видны в каждом разделе.</p></div><a class="btn btn-outline" href="#">Весь каталог, 11 000 позиций</a></div>
+    <div class="cat-grid">
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M12 12c-4 0-7-3-7-7 4 0 7 3 7 7zm0 0c4 0 7-3 7-7-4 0-7 3-7 7z"/></svg></span><div><b>Однолетние и двулетние</b><span><span class="fill">n</span> позиций: петуния, виола, бегония, бархатцы, сальвия</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg></span><div><b>Многолетники</b><span><span class="fill">n</span> позиций: аквилегия, дельфиниум, эхинацея, лаванда</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V8M5 22h14M12 8c-3 0-5-2-5-5 3 0 5 2 5 5zm0 0c3 0 5-2 5-5-3 0-5 2-5 5z"/></svg></span><div><b>Лиственные деревья и кустарники</b><span><span class="fill">n</span> позиций: абрикос, клён, барбарис, сирень</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 14h5l-3 6h12l-3-6h5z"/></svg></span><div><b>Хвойные деревья и кустарники</b><span><span class="fill">n</span> позиций: сосна, ель, туя, можжевельник</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V10M12 10c-5 0-8-3-8-7 5 0 8 3 8 7zm0 0c5 0 8-3 8-7-5 0-8 3-8 7zM12 10c0-4 2-7 5-8M12 10c0-4-2-7-5-8"/></svg></span><div><b>Пальмы и саговники</b><span><span class="fill">n</span> позиций</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V6M12 22c-4-1-6-4-6-8M12 22c4-1 6-4 6-8M9 9c-2 0-4-1-5-3M15 9c2 0 4-1 5-3"/></svg></span><div><b>Папоротники</b><span><span class="fill">n</span> позиций</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="18" rx="3"/><path d="M4 8v6a3 3 0 0 0 3 3h2M20 8v6a3 3 0 0 1-3 3h-2"/></svg></span><div><b>Суккуленты и кактусы</b><span><span class="fill">n</span> позиций: агава, эхеверия, литопсы</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10M12 10c-2 0-3-2-3-4a3 3 0 0 1 6 0c0 2-1 4-3 4zM8 13c-2 0-4 1-4 3M16 13c2 0 4 1 4 3"/></svg></span><div><b>Орхидеи</b><span><span class="fill">n</span> позиций</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12c3-4 6-4 9 0s6 4 9 0M3 18c3-4 6-4 9 0s6 4 9 0M3 6c3-4 6-4 9 0s6 4 9 0"/></svg></span><div><b>Водные растения</b><span><span class="fill">n</span> позиций</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20c0-6 3-10 8-10s8 4 8 10M12 10V3M8 6l4-3 4 3"/></svg></span><div><b>Декоративные злаки</b><span><span class="fill">n</span> позиций: пеннисетум, мискантус, ковыль</span></div></a>
+      <a class="cat" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="13" r="7"/><path d="M12 6V3M9 3h6"/></svg></span><div><b>Овощные культуры</b><span><span class="fill">n</span> позиций: перец, томат декоративный, тыква</span></div></a>
+      <a class="cat all" href="#"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span><div><b>Онлайн-каталог</b><span>таблица с фильтрами по виду, цвету, высоте, форме семян и производителю</span></div></a>
+    </div>
+    <!-- 5. Популярные культуры -->
+    <div class="blk blk-inline" id="cultures" data-tag="res" data-label="Новый блок: по результатам исследования. Быстрые входы по культурам со спросом: «семена петунии профессиональные» 1 221, «семена виолы» 2 021, «семена цикламена» 1 882, «семена пальм» 3 392, «семена кактусов» 2 993 показов в месяц" style="margin-top:22px">
+      <div class="cultures">
+        <a href="#">Петуния<small>профессиональные, драже</small></a>
+        <a href="#">Виола Виттрока и рогатая</a>
+        <a href="#">Цикламен</a>
+        <a href="#">Бегония</a>
+        <a href="#">Гвоздика</a>
+        <a href="#">Бархатцы</a>
+        <a href="#">Сальвия</a>
+        <a href="#">Лобелия</a>
+        <a href="#">Эустома</a>
+        <a href="#">Кальцеолярия</a>
+        <a href="#">Аквилегия</a>
+        <a href="#">Пальмы</a>
+        <a href="#">Кактусы и суккуленты</a>
+        <a href="#">Хвойные</a>
+        <a href="#">Редкие и экзотические</a>
+        <a href="#">По производителю →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Со склада сейчас -->
+<section class="section blk" id="stock" data-tag="res" data-label="Новый блок: по результатам исследования. Сорта из слайдера и склада с ценой за 1 000 шт, минимальным заказом, остатком и брендом (profsemcvet.com «В наличии: 0,45 тыс. шт.», semenakupi.ru фасовка 100/1 000, sibseed.ru «руб/упак»)" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Наличие</span><h2>Со склада в Королёве сейчас</h2><p>Отгружаем после оплаты счёта, самовывоз или транспортная компания. Цены и остатки условные, подставляются из каталога.</p></div><a class="btn btn-outline" href="#">Весь склад: прейскуранты А-К и Л-Я</a></div>
+    <div class="room-grid four">
+      <div class="room"><div class="pic"><img src="../assets/img/petunia-ampel.jpg" alt="Петуния ампельная Baby Gioconda F1"><div class="badges"><span class="chip">Драже</span></div></div><div class="body"><h3>Петуния ампельная Baby Gioconda F1</h3><div class="meta"><span>Однолетник</span><span><span class="fill">бренд</span></span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/viola-wittrock.jpg" alt="Виола Виттрока Xtrada"><div class="badges"><span class="chip">F1</span></div></div><div class="body"><h3>Виола Виттрока Xtrada</h3><div class="meta"><span>Двулетник</span><span>цветок 8-10 см</span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/viola-cornuta.jpg" alt="Виола рогатая"></div><div class="body"><h3>Виола рогатая (Viola cornuta)</h3><div class="meta"><span>Двулетник</span><span><span class="fill">бренд</span></span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/calceolaria.jpg" alt="Кальцеолярия гибридная"></div><div class="body"><h3>Кальцеолярия гибридная</h3><div class="meta"><span>Горшечная</span><span>15 см</span></div><div class="stock low">Осталось: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">500</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/aquilegia.jpg" alt="Аквилегия гибридная"></div><div class="body"><h3>Аквилегия гибридная</h3><div class="meta"><span>Многолетник</span><span><span class="fill">бренд</span></span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/petunia-ampel-2.jpg" alt="Петуния ампельная гибридная"></div><div class="body"><h3>Петуния ампельная гибридная (Petunia x hybrida)</h3><div class="meta"><span>Однолетник</span><span>для кашпо</span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/bg-3.jpg" alt="Агератум Алоха F1"></div><div class="body"><h3>Агератум Алоха F1</h3><div class="meta"><span>Однолетник</span><span>Hem Genetics</span></div><div class="stock">В наличии: <span class="fill">n</span> тыс. шт.</div><div class="p-row"><div class="price"><span class="fill">n ₽</span><small>за 1 000 шт, минимум <span class="fill">1 000</span></small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+      <div class="room"><div class="pic"><img src="../assets/img/bg-2.jpg" alt="Абрикос манчжурский"></div><div class="body"><h3>Абрикос манчжурский (Armeniaca mandshurica)</h3><div class="meta"><span>Дерево</span><span>Raw</span></div><div class="stock">В наличии</div><div class="p-row"><div class="price">7 ₽<small>за 1 г, минимум 75 г</small></div></div><div class="actions"><a class="btn btn-primary" href="#">В корзину</a><a class="btn btn-outline" href="#">В список</a></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Как купить -->
+<section class="section blk" id="buy" data-tag="res" data-label="Новый блок: по результатам исследования. Два способа покупки и сроки со страницы «Сроки доставки заказа» вынесены на главную (три способа у semenagavrish.ru, CRO-аудит: страница «Как купить семена оптом»)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Как купить</span><h2>Со склада сейчас или по предзаказу у производителя</h2><p>Заказы принимаем круглый год. Выберите способ, который подходит под ваши сроки посева.</p></div></div>
+    <div class="notice"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4M12 17h.01M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/></svg><span><b>Сейчас:</b> доставка под заказ временно приостановлена, продажа ведётся из наличия на складе. Баннер показывается, пока ограничение действует, и убирается, когда предзаказ откроется.</span></div>
+    <div class="two-ways">
+      <div class="way now">
+        <h3>Со склада в Королёве <span class="chip ok">сейчас</span></h3>
+        <ul>
+          <li>Семена цветов, деревьев и кустарников в наличии на складе в Подмосковье</li>
+          <li>Прейскуранты «Семена цветов от А до К» и «от Л до Я», остаток виден в каталоге</li>
+          <li>Отгрузка после оплаты счёта: самовывоз или транспортная компания</li>
+          <li>Заказ в онлайн-каталоге, по списку на info@agbina.com или в офисе в Королёве</li>
+        </ul>
+        <a class="btn btn-primary" href="#stock" style="align-self:flex-start">Смотреть наличие</a>
+      </div>
+      <div class="way">
+        <h3>По предзаказу у производителя <span class="chip">сезон</span></h3>
+        <ul>
+          <li>Полный ассортимент всех производителей из онлайн-каталога</li>
+          <li>Заказы принимаем круглый год, поставка с 1 октября по 1 марта</li>
+          <li>Максимальный срок ожидания 60 дней, обычно меньше</li>
+          <li>Заказ по ассортименту одного производителя приходит быстрее</li>
+        </ul>
+        <div class="lead-times">
+          <div><span>Benary</span><b>1,5 месяца</b></div><div><span>Syngenta</span><b>2 месяца</b></div>
+          <div><span>PanAmerican</span><b>1,5 месяца</b></div><div><span>Takii</span><b>2 месяца</b></div>
+          <div><span>Hem Genetics</span><b>1,5 месяца</b></div><div><span>Farmen</span><b>2 месяца</b></div>
+          <div><span>Floranova</span><b>2 месяца</b></div><div><span>Kieft Seed, Cerny</span><b><span class="fill">уточнить</span></b></div>
+        </div>
+      </div>
+    </div>
+    <div class="steps" style="margin-top:22px">
+      <div><b class="num">1</b><h3>Список или корзина</h3><p>Пришлите список сортов и количество или соберите корзину в каталоге</p></div>
+      <div><b class="num">2</b><h3>Наличие и замены</h3><p>Проверяем остаток и сроки, предлагаем замену, если позиции нет</p></div>
+      <div><b class="num">3</b><h3>Счёт со скидкой</h3><p>Выставляем счёт с вашей скидкой по обороту, документы для юрлица</p></div>
+      <div><b class="num">4</b><h3>Отгрузка</h3><p>Самовывоз из Королёва или отправка транспортной компанией</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Скидки по обороту -->
+<section class="section blk" id="discount" data-tag="mix" data-label="Существующий блок («Оптовикам») + новое: шкала таблицей на главной с CTA (CRO-аудит: калькулятор или таблица «какую скидку получите»)" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="catalog-layout price">
+      <div>
+        <span class="eyebrow">Оптовикам</span>
+        <h2>Скидка по обороту за сезон</h2>
+        <p style="color:var(--ink-2);max-width:640px;margin-top:8px">Сезон считается с 1 июля прошлого года по 1 июля текущего. Скидка действует весь следующий сезон при выполнении условий договора и распространяется также на газонные травы, древесно-кустарниковые культуры, удобрения Compo Expert и торфяные таблетки Jiffy.</p>
+        <table class="pricelist">
+          <tr><th>Покупки за сезон</th><th>Скидка на следующий сезон</th></tr>
+          <tr><td>от 200 000 до 400 000 ₽</td><td class="p">5 %</td></tr>
+          <tr><td>от 400 000 до 600 000 ₽</td><td class="p">8 %</td></tr>
+          <tr><td>от 600 000 до 1 000 000 ₽</td><td class="p">10 %</td></tr>
+          <tr><td>более 1 000 000 ₽</td><td class="p">15 %</td></tr>
+          <tr><td>Членам Ассоциации производителей посадочного материала</td><td class="p">5 %</td></tr>
+        </table>
+      </div>
+      <div class="lead-card">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM8 12h8M12 8v8"/></svg></div>
+        <h3>Новому питомнику или садовому центру</h3>
+        <p>Расскажите, какие культуры и объёмы планируете на сезон: посчитаем ориентир по цене, подскажем, с какого оборота начнётся скидка, и заключим договор.</p>
+        <a class="btn" href="#" data-ask data-ask-title="Запросить условия для юрлица" data-ask-sub="Организация, культуры и примерный объём на сезон">Запросить условия</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Производители -->
+<section class="section blk" id="brands" data-tag="mix" data-label="Существующий блок («Бренды») + новое: срок поставки под каждым логотипом и ссылка в каталог с фильтром по производителю («Выбор по брендам» semena-tut.ru, фильтр semenakupi.ru)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Производители</span><h2>Семена мировых селекционеров напрямую</h2><p>Профессиональные упаковки с сортовыми и посевными качествами, заявленными производителем. Нажмите на логотип, чтобы открыть каталог с фильтром по бренду.</p></div><a class="btn btn-outline" href="#">Все бренды</a></div>
+    <div class="brands six">
+      <a class="brand-card" href="#"><img src="../assets/img/brands/benary.png" alt="Benary"><b>Benary</b><span>Германия, предзаказ 1,5 мес.</span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/panamerican.png" alt="PanAmerican Seed"><b>PanAmerican</b><span>США, предзаказ 1,5 мес.</span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/syngenta.png" alt="Syngenta"><b>Syngenta Flowers</b><span>предзаказ 2 мес., черенки FloriPro</span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/hem-genetics.png" alt="Hem Genetics"><b>Hem Genetics</b><span>Нидерланды, предзаказ 1,5 мес.</span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/kieft-seed.png" alt="Kieft Seed"><b>Kieft Seed</b><span>многолетники, <span class="fill">срок</span></span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/floranova.png" alt="Floranova"><b>Floranova</b><span>предзаказ 2 мес., новинка каталога</span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/cerny.png" alt="Cerny"><b>Cerny</b><span>Чехия, <span class="fill">срок</span></span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/farao.png" alt="Farao"><b>Farao</b><span><span class="fill">страна, срок</span></span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/evanthia.png" alt="Evanthia"><b>Evanthia</b><span>Нидерланды, <span class="fill">срок</span></span></a>
+      <a class="brand-card" href="#"><img src="../assets/img/brands/murakami.png" alt="Murakami"><b>Murakami</b><span>Япония, <span class="fill">срок</span></span></a>
+      <a class="brand-card" href="#"><b>Takii</b><span>Япония, предзаказ 2 мес.</span></a>
+      <a class="brand-card" href="#"><b>Queen, DLF, Jiffy, Compo Expert</b><span>каланхоэ, газон, субстраты, удобрения</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. Не только цветы -->
+<section class="section blk" id="rare" data-tag="res" data-label="Новый блок: по результатам исследования. Направления, которых нет ни у одного конкурента из ТОП-10: деревья, хвойные, пальмы, суккуленты, редкие растения («семена пальм» 3 392, «семена кактусов» 2 993 показов в месяц)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Не только цветы</span><h2>Семена деревьев, хвойных, пальм и редких растений</h2><p>Агбина работает с поставщиками и обменивается семенами с ботаническими садами по всему миру, поэтому в каталоге есть культуры, которых нет у магазинов профсемян цветов.</p></div></div>
+    <div class="niche-grid" style="grid-template-columns:repeat(4,1fr)">
+      <a class="niche photo" href="#" style="background-image:url('../assets/img/bg-2.jpg')"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V8M5 22h14M12 8c-3 0-5-2-5-5 3 0 5 2 5 5zm0 0c3 0 5-2 5-5-3 0-5 2-5 5z"/></svg></span><b>Лиственные деревья и кустарники</b><span>для питомников и лесных хозяйств, цена за 1 г</span><span class="p"><span class="fill">n</span> позиций</span></a>
+      <a class="niche photo" href="#" style="background-image:url('../assets/img/bg-5.jpg')"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 14h5l-3 6h12l-3-6h5z"/></svg></span><b>Хвойные</b><span>сосна, ель, пихта, туя, кипарисовик</span><span class="p"><span class="fill">n</span> позиций</span></a>
+      <a class="niche photo" href="#" style="background-image:url('../assets/img/bg-4.jpg')"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V10M12 10c-5 0-8-3-8-7 5 0 8 3 8 7zm0 0c5 0 8-3 8-7-5 0-8 3-8 7z"/></svg></span><b>Пальмы, саговники, папоротники</b><span>для оранжерей и интерьерного озеленения</span><span class="p"><span class="fill">n</span> позиций</span></a>
+      <a class="niche photo" href="#" style="background-image:url('../assets/img/bg-3.jpg')"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="3" width="6" height="18" rx="3"/><path d="M4 8v6a3 3 0 0 0 3 3h2M20 8v6a3 3 0 0 1-3 3h-2"/></svg></span><b>Суккуленты, кактусы, редкие</b><span>обмен семенами с ботаническими садами</span><span class="p"><span class="fill">n</span> позиций</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Доставка и оплата -->
+<section class="section blk" id="delivery" data-tag="res" data-label="Новый блок: по результатам исследования. Доставка, оплата и документы для юрлица на главной (есть у 31 из 36 страниц конкурентов; на agbina.ru раздела нет)" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Доставка и оплата</span><h2>Как получить семена</h2></div></div>
+    <div class="info-grid">
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h13v10H3zM16 10h4l1 3v4h-5z"/><circle cx="7" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div><h3>Транспортной компанией по России</h3><ul><li>Отправка со склада в Королёве после оплаты</li><li>Перевозчик и стоимость: <span class="fill">условия заполняет клиент</span></li><li>Семена деревьев и кустарников отправляем в любое время года</li></ul></div>
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3>Самовывоз в Королёве</h3><ul><li>ул. Северная, д. 8, Пн-Пт 9:00-19:00</li><li>Заказ готовим к выдаче <span class="fill">в день оплаты / на следующий день</span></li><li>Можно купить в офисе по прейскуранту склада</li></ul></div>
+      <div class="info accent"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM8 9h8M8 13h8M8 17h5"/></svg></div><h3>Оплата и документы</h3><ul><li>Счёт для юридических лиц и ИП, договор поставки</li><li>Товарная накладная, счёт-фактура или УПД</li><li>Скидка по обороту применяется в счёте автоматически</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. Почему Агбина -->
+<section class="section blk" id="why" data-tag="res" data-label="Новый блок: по результатам исследования. Доказательства со страницы «Компания» собраны на главной: ассоциации, ботанические сады, собственные направления (аргументы с цифрами у semena-tut.ru, semco.ru, seed.ru)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Компания</span><h2>Почему питомники и садовые центры покупают в Агбине</h2></div><a class="btn btn-outline" href="#">О компании</a></div>
+    <div class="info-grid">
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><h3>Прямые поставки от селекционеров</h3><p>Benary, PanAmerican, Syngenta, Hem Genetics, Kieft Seed, Takii, Floranova, Cerny, Farao, Evanthia, Murakami: профессиональные упаковки, форма семян как у производителя (обычные, драже, обработанные, инкрустированные).</p></div>
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg></div><h3>Ботанические сады всего мира</h3><p>Обмен семенами с ботаническими садами: в каталоге культурные и дикорастущие виды, редкие деревья, пальмы, саговники, кактусы и папоротники.</p></div>
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM8.2 13.9 7 23l5-3 5 3-1.2-9.1"/></svg></div><h3>Четыре профессиональные ассоциации</h3><p>Ассоциированный член ISF, член Fleuroselect и Ассоциации независимых семенных компаний, с 2011 года в Ассоциации производителей посадочного материала.</p></div>
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12M12 12c-4 0-7-3-7-7 4 0 7 3 7 7zm0 0c4 0 7-3 7-7-4 0-7 3-7 7z"/></svg></div><h3>Всё для выращивания</h3><p>Газонные травы DLF (agbina-grass.ru), торфяные таблетки и субстраты Jiffy, удобрения длительного действия Compo Expert (Basacote, Basatop, Floranid), черенки и сеянцы Syngenta FloriPro.</p></div>
+      <div class="info"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Подбор и замены</h3><p>Агроном отдела продаж подбирает сорта под задачу, сроки посева и регион, предлагает замену, если позиции нет в наличии или у производителя.</p></div>
+      <div class="info dark"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg></div><h3>Как проверить качество семян</h3><p>Инструкция о всхожести, форме, покрытии и обработке семян и статьи о черенках и сеянцах: раздел «Полезная информация».</p><a class="btn btn-light btn-sm" href="#">Читать</a></div>
+    </div>
+    <div class="assoc"><span><i></i>ISF, International Seed Federation</span><span><i></i>Fleuroselect</span><span><i></i>Ассоциация независимых семенных компаний</span><span><i></i>АППМ, с 2011 года</span></div>
+  </div>
+</section>
+
+<!-- 13. Отзывы -->
+<section class="section blk" id="reviews" data-tag="res" data-label="Новый блок: по результатам исследования. Отзывы питомников и садовых центров (есть у 23 из 36 страниц конкурентов, «О нас пишут» semco.ru). Тексты условные, заменяются реальными" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Отзывы</span><h2>Что говорят питомники и садовые центры</h2></div><a class="btn btn-outline" href="#">Отзывы на Яндекс Картах</a></div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p><span class="fill">условный текст</span> Берём профессиональные семена петунии и виолы под рассаду третий сезон: всхожесть соответствует заявленной, замену по редкому сорту предложили сразу.</p><div class="who"><i>П</i><span>Питомник, <span class="fill">регион</span></span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p><span class="fill">условный текст</span> Удобно, что цена сразу за 1 000 семян и виден остаток, а счёт со скидкой по обороту приходит в тот же день.</p><div class="who"><i>С</i><span>Садовый центр, <span class="fill">регион</span></span></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p><span class="fill">условный текст</span> Заказывали семена хвойных и лиственных для лесопитомника, в другом месте такого ассортимента не нашли.</p><div class="who"><i>Л</i><span>Лесопитомник, <span class="fill">регион</span></span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 14. Новости -->
+<section class="section blk" id="news" data-tag="mix" data-label="Существующий раздел «Новости» выведен на главную тремя карточками (новости на главной у semena-tut.ru, agroopt-market.ru, seed.ru)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Новости и новинки</span><h2>Что нового в каталоге</h2></div><a class="btn btn-outline" href="#">Все новости</a></div>
+    <div class="offer-grid three">
+      <div class="offer"><div class="pic"><img src="../assets/img/petunia-ampel-2.jpg" alt=""><span class="chip">7 ноября 2025</span></div><div class="body"><h3>Ассортимент Floranova теперь в онлайн-каталоге</h3><p>В онлайн-каталоге появилась продукция компании Floranova, срок поставки по предзаказу 2 месяца.</p></div></div>
+      <div class="offer"><div class="pic"><img src="../assets/img/viola-cornuta.jpg" alt=""><span class="chip">Важное</span></div><div class="body"><h3>Укоренённые черенки и сеянцы Syngenta FloriPro Services</h3><p>Новый партнёр: ассортимент вегетативных культур для производителей рассады.</p></div></div>
+      <div class="offer"><div class="pic"><img src="../assets/img/calceolaria.jpg" alt=""><span class="chip">События</span></div><div class="body"><h3>Каланхоэ от компании Queen</h3><p>Сотрудничество с датским селекционером и производителем каланхоэ.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 15. Отправить список -->
+<section class="section blk" id="ask" data-tag="res" data-label="Новый блок: по результатам исследования. Форма «отправить список семян» с файлом и сроком (CRO-аудит NEXT_STEP и PROCESS) вместо полосы «Нужна консультация?» с текстом про услуги">
+  <div class="container">
+    <div class="calc">
+      <div>
+        <span class="eyebrow" style="color:#F6D9A8">Заявка</span>
+        <h2>Пришлите список семян на сезон</h2>
+        <p>Файл из вашей учётной системы, таблица или просто текст: сорта и количество. Ответим по наличию, срокам и цене с вашей скидкой в течение рабочего дня.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Проверим наличие на складе и сроки у производителей</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Предложим замены по сортам, которых нет</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Выставим счёт со скидкой по обороту и документами для юрлица</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6"/></svg>Telegram, WhatsApp, info@agbina.com или 8 (495) 516-53-18</li>
+        </ul>
+        <div class="pic"><img src="../assets/img/bg-4.jpg" alt="Виолы в контейнерах"></div>
+      </div>
+      <form class="form" data-done="Список принят, ответим в течение рабочего дня">
+        <div class="row2"><label class="field"><input type="text" placeholder="Организация" required></label><label class="field"><input type="text" placeholder="Контактное лицо"></label></div>
+        <div class="row2"><label class="field"><input type="tel" placeholder="Телефон" required></label><label class="field"><input type="email" placeholder="E-mail"></label></div>
+        <div class="row2"><label class="field"><select><option>Нужно со склада сейчас</option><option>Предзаказ на сезон</option><option>Сначала расчёт</option></select></label><label class="field"><input type="text" placeholder="Желаемый срок поставки"></label></div>
+        <label class="field"><textarea rows="3" placeholder="Сорта и количество или комментарий"></textarea></label>
+        <label class="field"><input type="file" aria-label="Файл списка"></label>
+        <button class="btn btn-primary btn-block" type="submit">Отправить список</button>
+        <div class="consent">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 16. FAQ -->
+<section class="section blk" id="faq" data-tag="res" data-label="Новый блок: по результатам исследования. Вопросы перед заказом (CRO-аудит FAQ). FAQ есть только у 1 из 36 страниц конкурентов, поэтому это точка отстройки" style="background:var(--surface);border-top:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Вопросы и ответы</span><h2>Что спрашивают перед заказом</h2></div></div>
+    <div class="faq-2">
+      <div class="faq">
+        <details open><summary>Можно купить со склада или только под заказ?</summary><div class="a">Оба варианта. Со склада в Королёве отгружаем то, что есть в прейскурантах «Семена цветов от А до К» и «от Л до Я» и в каталоге с остатком. Под заказ у производителя доступен полный ассортимент, поставка с 1 октября по 1 марта. Пока доставка под заказ приостановлена, продажа ведётся из наличия.</div></details>
+        <details><summary>Когда привезут предзаказ?</summary><div class="a">Максимальный срок ожидания 60 дней, обычно меньше. Benary, PanAmerican и Hem Genetics поставляют за 1,5 месяца, Syngenta, Takii, Farmen и Floranova за 2 месяца. Заказ по ассортименту одного производителя приходит быстрее. Заказы, сделанные после 1 марта, приедут осенью.</div></details>
+        <details><summary>Какая фасовка и минимальный заказ?</summary><div class="a">Цена указана за 1 000 семян или за 1 г (для деревьев, кустарников и весовых культур). Минимальное количество для заказа стоит у каждого сорта в каталоге и подставляется в калькулятор автоматически.</div></details>
+        <details><summary>Как получить счёт и документы?</summary><div class="a">Оформите корзину или пришлите список: выставим счёт для юридического лица или ИП, заключим договор поставки, к отгрузке приложим накладную и счёт-фактуру или УПД.</div></details>
+      </div>
+      <div class="faq">
+        <details><summary>Что делать, если нужного сорта нет?</summary><div class="a">Агроном отдела продаж предложит замену из той же серии или аналог другого производителя с близкими сроками цветения, высотой и окраской.</div></details>
+        <details><summary>Как работает скидка?</summary><div class="a">Скидка считается по покупкам за сезон с 1 июля по 1 июля: от 200 000 ₽ — 5 %, от 400 000 ₽ — 8 %, от 600 000 ₽ — 10 %, более 1 000 000 ₽ — 15 %, и действует весь следующий сезон. Членам АППМ 5 % сразу.</div></details>
+        <details><summary>Где посмотреть остаток и форму семян?</summary><div class="a">В онлайн-каталоге: столбцы «Остаток», «Форма семян» (обычные, драже, обработанные, инкрустированные, как заявлено производителем) и «Минимальный заказ». Наведите на английское название формы, чтобы увидеть подсказку на русском.</div></details>
+        <details><summary>Как проверить качество семян?</summary><div class="a">В разделе «Полезная информация» есть статьи о проверке всхожести, форме, покрытии и обработке семян, а также о черенках и сеянцах.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 17. Контакты -->
+<section class="section blk" id="contacts" data-tag="mix" data-label="Существующий блок + новое: роли телефонов (продажи, предзаказ, склад), статичная карта вместо «Загрузка карты…» (CRO-аудит: роли контактов; адреса с картой seed.ru, profsemcvet.com)">
+  <div class="container">
+    <div class="section-head"><div><span class="eyebrow">Контакты</span><h2>Офис и склад в Королёве</h2></div><a class="btn btn-outline" href="#">Все контакты</a></div>
+    <div class="route">
+      <a class="map-img" href="https://yandex.ru/maps/?text=Королёв, улица Северная, 8" target="_blank" rel="noopener"><img src="../assets/img/map-korolev.jpg" alt="Карта: Королёв, ул. Северная, 8" loading="lazy"><span>Королёв, ул. Северная, д. 8</span></a>
+      <div class="contact-card">
+        <div class="row"><span>Отдел продаж</span><span><b>8 (495) 516-53-18</b><br>Пн-Пт 9:00-19:00, Сб-Вс выходные</span></div>
+        <div class="row"><span>Предзаказ и подбор</span><span>8 (916) 202-97-28 <span class="fill">роль уточнить</span></span></div>
+        <div class="row"><span>Склад, самовывоз</span><span>8 (916) 202-94-66 <span class="fill">роль уточнить</span></span></div>
+        <div class="row"><span>Почта</span><span>info@agbina.com, заявки и списки семян</span></div>
+        <div class="row"><span>Мессенджеры</span><span>Telegram, WhatsApp <span class="fill">номер</span></span></div>
+        <div class="row"><span>Адрес</span><span>141070, Московская область, г. Королёв, ул. Северная, д. 8</span></div>
+        <div class="row"><span>Реквизиты</span><span>ООО «Фирма «Агбина», ОГРН 1037739043451, ИНН 7718109208</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 18. Подвал -->
+<footer class="footer blk" data-tag="mix" data-label="Существующий блок + новое: разделы каталога, условия для покупателей, соседние магазины Агбины, реквизиты">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <img src="../assets/img/logo.png" alt="Агбина" style="height:44px;background:#fff;border-radius:8px;padding:4px 8px;margin-bottom:12px">
+        <p>ООО «Фирма «Агбина»: профессиональные семена цветов, деревьев, кустарников, хвойных, пальм и редких растений оптом для питомников, садовых центров, фермерских хозяйств и озеленения. Член ISF, Fleuroselect, АНСК и АППМ.</p>
+        <p><b style="color:#fff">8 (495) 516-53-18</b><br>8 (916) 202-97-28, 8 (916) 202-94-66<br>info@agbina.com<br>141070, Московская область, г. Королёв, ул. Северная, д. 8</p>
+      </div>
+      <div><h4>Каталог</h4><a href="#catalog">Однолетние и двулетние</a><a href="#catalog">Многолетники</a><a href="#catalog">Лиственные деревья и кустарники</a><a href="#catalog">Хвойные</a><a href="#catalog">Пальмы и саговники</a><a href="#catalog">Суккуленты и папоротники</a><a href="#brands">По производителю</a><a href="#">Прайс-листы</a></div>
+      <div><h4>Покупателям</h4><a href="#buy">Как купить: склад и предзаказ</a><a href="#discount">Оптовикам: скидки по обороту</a><a href="#delivery">Доставка и оплата</a><a href="#">Как работать с онлайн-каталогом</a><a href="#">Форма, покрытие и обработка семян</a><a href="#">Как проверить качество семян</a><a href="#faq">Вопросы и ответы</a></div>
+      <div><h4>Компания</h4><a href="#why">О компании</a><a href="#news">Новости</a><a href="#contacts">Контакты</a><a href="#">Реквизиты</a><a href="#">Политика конфиденциальности</a><a href="#">Газонные травы DLF: agbina-grass.ru</a><a href="#">Торфяные таблетки Jiffy</a><a href="#">Удобрения Compo Expert</a><a href="#">Энциклопедия растений: agbina.com</a></div>
+    </div>
+    <div class="bottom"><span>© 2026 ООО «Фирма «Агбина»</span><span>Прототип. Число позиций, цены, остатки, сроки доставки и тексты отзывов, помеченные оранжевым, условные. <a href="../rationale.html" style="display:inline;padding:0;color:#fff;text-decoration:underline">Почему эти блоки: обоснование</a></span></div>
+  </div>
+</footer>
+
+<!-- 19. Липкая панель -->
+<div class="sticky-bar blk" data-tag="res" data-label="Новый: липкая панель на мобильном с телефоном, списком и каталогом">
+  <div class="price-mini"><b>8 (495) 516-53-18</b><span>Пн-Пт 9:00-19:00</span></div>
+  <a class="btn btn-primary" href="#" data-ask data-ask-title="Отправить список семян" data-ask-sub="Сорта и количество или файл">Список</a>
+  <a class="btn btn-outline" href="#catalog">Каталог</a>
+</div>
+
+<div class="modal">
+  <form class="box" data-done="Принято, ответим в течение рабочего дня">
+    <button class="x" type="button" data-close-modal aria-label="Закрыть">✕</button>
+    <h3>Отправить список семян</h3>
+    <div class="sub">Сорта и количество или файл, ответим по наличию и цене</div>
+    <div class="prod-line" style="display:none"><img src="../assets/img/petunia-ampel.jpg" alt=""><span></span></div>
+    <label class="field"><input type="text" placeholder="Организация" required></label>
+    <label class="field"><input type="tel" placeholder="Телефон или e-mail" required></label>
+    <label class="field"><textarea rows="3" placeholder="Сорта и количество"></textarea></label>
+    <label class="field"><input type="file" aria-label="Файл списка"></label>
+    <button class="btn btn-primary btn-block" type="submit" style="margin-top:6px">Отправить</button>
+    <div class="reply-note"><i></i>Ответим в течение рабочего дня, Пн-Пт 9:00-19:00</div>
+    <div class="consent">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</div>
+  </form>
+</div>
+
+<script src="../assets/app.js?v=1"></script>
+</body>
+</html>

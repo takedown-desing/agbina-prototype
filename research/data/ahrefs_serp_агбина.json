@@ -1,0 +1,132 @@
+{
+  "positions": [
+    {
+      "position": 1,
+      "url": "http://www.agbina.ru/",
+      "title": "Добро пожаловать на сайт компании «Агбина»!",
+      "domain_rating": 11.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 1,
+      "url": "http://www.agbina.ru/catalog/",
+      "title": "Каталог",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink" ]
+    },
+    {
+      "position": 1,
+      "url": "http://www.agbina.ru/prices/",
+      "title": "Прейскуранты на семена и ...",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink" ]
+    },
+    {
+      "position": 1,
+      "url": "http://www.agbina.ru/contacts/",
+      "title": "Контакты",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink" ]
+    },
+    {
+      "position": 1,
+      "url": "http://agbina.ru/info/86/",
+      "title": "Черенки и сеянцы",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink" ]
+    },
+    {
+      "position": 2,
+      "url": "http://www.agbina.com/",
+      "title": "agbina.com",
+      "domain_rating": 22.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 2,
+      "url": "http://www.shop.agbina.com/",
+      "title": "Онлайн-каталог - agbina.com",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink", "image_th" ]
+    },
+    {
+      "position": 3,
+      "url": "http://www.agbina-grass.ru/",
+      "title": "Добро пожаловать в Интернет-магазин \"Газонные ...",
+      "domain_rating": 2.0,
+      "traffic": null,
+      "type": [ "organic", "image_th" ]
+    },
+    {
+      "position": 4,
+      "url": "https://greenagri.ru/agbina",
+      "title": "Агбина - Интернет магазин Грин Агро",
+      "domain_rating": 1.0,
+      "traffic": null,
+      "type": [ "organic", "image_th" ]
+    },
+    {
+      "position": 5,
+      "url": "https://leroymerlin.ru/product/gazonnaya-smes-agbina-grass-fiks-0-91202446/",
+      "title": "Газонная смесь Агбина Грасс Фикс 0,5 кг - Леруа Мерлен",
+      "domain_rating": 70.0,
+      "traffic": null,
+      "type": [ "organic", "image_th" ]
+    },
+    {
+      "position": 5,
+      "url": "https://leroymerlin.ru/product/gazonnaya-smes-agbina-sport-0-91202456/",
+      "title": "Газонная смесь Агбина Спорт 0,5 кг в Москве - Леруа Мерлен",
+      "domain_rating": null,
+      "traffic": null,
+      "type": [ "sitelink" ]
+    },
+    {
+      "position": 6,
+      "url": "https://gardenzia.ru/postavschiki-i-pitomniki/russian-manufacturers-and-suppliers/agbina-semena.html?limit=9",
+      "title": "АГБИНА (семена) - Gardenzia - интернет магазин растений",
+      "domain_rating": 0.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 7,
+      "url": "https://www.emis.com/php/company-profile/RU/Firma_Agbina_OOO__%D0%A4%D0%B8%D1%80%D0%BC%D0%B0_%D0%90%D0%B3%D0%B1%D0%B8%D0%BD%D0%B0_%D0%9E%D0%9E%D0%9E__ru_2461288.html",
+      "title": "Фирма Агбина ООО Профиль компании - Россия - EMIS",
+      "domain_rating": 68.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 8,
+      "url": "https://yandex.ru/maps/org/agbina/1054920771/reviews/",
+      "title": "Отзывы об «Агбина - Yandex",
+      "domain_rating": 94.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 9,
+      "url": "https://www.rbc.ru/companies/id/1037739043451-ooo-firma-agbina/",
+      "title": "ООО \"ФИРМА \"АГБИНА\" — ОГРН 1037739043451 ... - РБК",
+      "domain_rating": 88.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    },
+    {
+      "position": 10,
+      "url": "https://www.list-org.com/company/120903",
+      "title": "ООО \"ФИРМА \"АГБИНА\", ИНН 7718109208 - List-Org",
+      "domain_rating": 71.0,
+      "traffic": null,
+      "type": [ "organic" ]
+    }
+  ]
+}

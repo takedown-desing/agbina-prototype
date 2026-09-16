@@ -1,0 +1,108 @@
+{
+  "targets": [
+    {
+      "url": "semenakupi.ru/",
+      "domain_rating": 1.8,
+      "org_traffic": 176,
+      "org_keywords": 33,
+      "org_keywords_1_3": 5,
+      "refdomains": 374
+    },
+    {
+      "url": "semco.ru/",
+      "domain_rating": 27.0,
+      "org_traffic": 27231,
+      "org_keywords": 1755,
+      "org_keywords_1_3": 853,
+      "refdomains": 719
+    },
+    {
+      "url": "unas.ru/",
+      "domain_rating": 27.0,
+      "org_traffic": 405,
+      "org_keywords": 169,
+      "org_keywords_1_3": 91,
+      "refdomains": 559
+    },
+    {
+      "url": "mosagrogroup.com/",
+      "domain_rating": 22.0,
+      "org_traffic": 17,
+      "org_keywords": 5,
+      "org_keywords_1_3": 2,
+      "refdomains": 520
+    },
+    {
+      "url": "russkiyrostok.ru/",
+      "domain_rating": 15.0,
+      "org_traffic": 539,
+      "org_keywords": 184,
+      "org_keywords_1_3": 58,
+      "refdomains": 523
+    },
+    {
+      "url": "ncsemena.ru/",
+      "domain_rating": 34.0,
+      "org_traffic": 10586,
+      "org_keywords": 2961,
+      "org_keywords_1_3": 865,
+      "refdomains": 1245
+    },
+    {
+      "url": "optsemena.ru/",
+      "domain_rating": 13.0,
+      "org_traffic": 1426,
+      "org_keywords": 386,
+      "org_keywords_1_3": 101,
+      "refdomains": 318
+    },
+    {
+      "url": "biotexnica.ru/",
+      "domain_rating": 12.0,
+      "org_traffic": 110,
+      "org_keywords": 86,
+      "org_keywords_1_3": 13,
+      "refdomains": 419
+    },
+    {
+      "url": "petunias.ru/",
+      "domain_rating": 0.5,
+      "org_traffic": 128,
+      "org_keywords": 30,
+      "org_keywords_1_3": 9,
+      "refdomains": 385
+    },
+    {
+      "url": "agroviola.ru/",
+      "domain_rating": 2.0,
+      "org_traffic": 392,
+      "org_keywords": 75,
+      "org_keywords_1_3": 13,
+      "refdomains": 217
+    },
+    {
+      "url": "agbina-grass.ru/",
+      "domain_rating": 2.0,
+      "org_traffic": 1150,
+      "org_keywords": 57,
+      "org_keywords_1_3": 11,
+      "refdomains": 676
+    },
+    {
+      "url": "agbina-jiffy.ru/",
+      "domain_rating": 5.0,
+      "org_traffic": 5,
+      "org_keywords": 5,
+      "org_keywords_1_3": 1,
+      "refdomains": 815
+    },
+    {
+      "url": "agbina-compo.ru/",
+      "domain_rating": 1.2,
+      "org_traffic": 0,
+      "org_keywords": 1,
+      "org_keywords_1_3": 0,
+      "refdomains": 446
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Обоснование блоков прототипа главной Агбина</title>
+<meta name="description" content="Почему в прототип главной agbina.ru добавлен каждый блок: данные спроса и выдачи, скриншоты примеров у конкурентов из ТОП-10 со ссылками на их страницы, скриншоты текущего сайта.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23E58A0B%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EА%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/styles.css?v=1">
+<style>
+body{padding-top:0}
+.rat-top{background:var(--navy);color:#fff;padding:40px 0 32px}
+.rat-top .container{display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:end}
+.rat-top h1{color:#fff;font-size:clamp(28px,3.4vw,42px)}
+.rat-top p{color:#C9DACD;max-width:720px}
+.rat-top .links{display:flex;gap:8px;flex-wrap:wrap}
+.rat-top .links a{border:1px solid rgba(255,255,255,.3);border-radius:10px;padding:9px 14px;font-weight:600;font-size:14px;color:#fff}
+.rat-top .links a:hover{background:rgba(255,255,255,.1)}
+.rat-layout{display:grid;grid-template-columns:250px minmax(0,1fr);gap:32px;align-items:start;padding:32px 0 60px}
+.rat-nav{position:sticky;top:20px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;max-height:calc(100vh - 40px);overflow:auto}
+.rat-nav h4{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:10px 0 6px}
+.rat-nav a{display:block;padding:6px 8px;border-radius:8px;font-size:13.5px;color:var(--ink-2)}
+.rat-nav a:hover{background:var(--surface-2);color:var(--ink)}
+.rat-nav .n{display:inline-block;width:20px;color:var(--muted);font-size:12px}
+.rat-sec{margin-bottom:44px}
+.rat-sec > h2{margin-bottom:6px}
+.rat-sec > .sub{color:var(--ink-2);margin-bottom:18px;max-width:820px}
+.rat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:16px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:24px}
+.rat > *,.rat-layout > *,.shots > *,.was-grid > *{min-width:0}
+.rat .head{grid-column:1/-1;display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.rat .head h3{font-size:19px;flex:1;min-width:240px}
+.rat .num{font-family:var(--font-h);font-weight:800;color:var(--brand-dark);font-size:20px;min-width:34px}
+.tagchip{display:inline-flex;align-items:center;border-radius:6px;padding:5px 9px;font-size:11.5px;font-weight:700;color:#fff;white-space:nowrap}
+.tagchip.old{background:var(--tag-old)}.tagchip.res{background:var(--tag-res)}.tagchip.mix{background:linear-gradient(90deg,var(--tag-old) 0 50%,var(--tag-res) 50% 100%)}
+.rat .why b,.rat .data b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:6px}
+.rat .why p{font-size:14.5px;color:var(--ink-2);margin-bottom:12px}
+.rat .data ul{margin:0 0 12px;padding-left:18px;font-size:14px;color:var(--ink-2);display:grid;gap:4px}
+.rat .proto{font-size:13.5px}
+.rat .proto a{color:var(--brand-dark);font-weight:600}
+.shots{display:grid;gap:12px}
+.shots figure{margin:0;background:var(--surface-2);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.shots figure a{display:block}
+.shots img{width:100%;height:auto;display:block}
+.shots figcaption{padding:10px 12px;font-size:12.5px;color:var(--ink-2);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.shots figcaption a{color:var(--brand-dark);font-weight:600;white-space:nowrap}
+.shots.two{grid-template-columns:1fr 1fr}
+.was-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.was{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.was img{width:100%;display:block;border-bottom:1px solid var(--line)}
+.was .b{padding:14px 16px}
+.was .b b{display:block;margin-bottom:6px}
+.was ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink-2);display:grid;gap:3px}
+.src-table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;border:1px solid var(--line)}
+.src-table th,.src-table td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.src-table th{background:var(--surface-2);font-family:var(--font-h);font-size:12.5px}
+.src-table a{color:var(--brand-dark);font-weight:600}
+@media (max-width:1024px){.rat-layout{grid-template-columns:minmax(0,1fr)}.rat-nav{position:static;max-height:none}.rat{grid-template-columns:minmax(0,1fr)}.rat-top .container{grid-template-columns:1fr}}
+@media (max-width:720px){html,body{overflow-x:hidden}.was-grid,.shots.two{grid-template-columns:minmax(0,1fr)}.rat{padding:16px}.rat .head h3{min-width:0}.shots figcaption a{white-space:normal}}
+</style>
+</head>
+<body>
+
+<div class="rat-top">
+  <div class="container">
+    <div>
+      <span class="eyebrow" style="color:#F6D9A8">agbina.ru, прототип главной, сентябрь 2026</span>
+      <h1>Обоснование блоков: почему на главной именно эти блоки</h1>
+      <p style="margin-top:10px">Для каждого блока: зачем он оптовому покупателю, какие данные исследования его подтверждают, у кого из конкурентов в ТОП-10 это уже работает (скриншот и ссылка на страницу) и где посмотреть в прототипе. Скриншоты сняты 16 сентября 2026 в Chrome при ширине 1440 px.</p>
+    </div>
+    <div class="links">
+      <a href="index.html">Обзор</a>
+      <a href="prototypes/home.html">Прототип главной</a>
+      <a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/RESEARCH.md" target="_blank" rel="noopener">Полное исследование</a>
+      <a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/BLOCKS-MAP.md" target="_blank" rel="noopener">Карта блоков</a>
+    </div>
+  </div>
+</div>
+
+<div class="container rat-layout">
+  <aside class="rat-nav">
+    <h4>Разделы</h4>
+    <a href="#was">Как сайт выглядит сейчас</a>
+    <a href="#sources">Конкуренты и источники</a>
+    <a href="#queries">Запросы исследования</a>
+    <h4>Блоки главной</h4>
+    <a href="#h1"><span class="n">1</span>Верхняя полоса и шапка</a>
+    <a href="#h2"><span class="n">2</span>Первый экран с H1 и формой</a>
+    <a href="#h3"><span class="n">3</span>Полоса цифр</a>
+    <a href="#h4"><span class="n">4</span>Разделы каталога и культуры</a>
+    <a href="#h6"><span class="n">6</span>Со склада сейчас</a>
+    <a href="#h7"><span class="n">7</span>Как купить: склад и предзаказ</a>
+    <a href="#h8"><span class="n">8</span>Скидки по обороту</a>
+    <a href="#h9"><span class="n">9</span>Производители</a>
+    <a href="#h10"><span class="n">10</span>Не только цветы</a>
+    <a href="#h11"><span class="n">11</span>Доставка и оплата</a>
+    <a href="#h12"><span class="n">12</span>Почему Агбина</a>
+    <a href="#h13"><span class="n">13</span>Отзывы и новости</a>
+    <a href="#h15"><span class="n">15</span>Отправить список</a>
+    <a href="#h16"><span class="n">16</span>FAQ</a>
+    <a href="#h17"><span class="n">17</span>Контакты, подвал, панель</a>
+    <h4>Прочее</h4>
+    <a href="#removed">Что убрали и исправили</a>
+  </aside>
+
+  <main>
+    <section class="rat-sec" id="was">
+      <h2>Как сайт выглядит сейчас</h2>
+      <p class="sub">Скриншоты agbina.ru сняты с полной прокруткой 16 сентября 2026. Полные версии для десктопа (1440 px) и телефона (390 px), 12 страниц, лежат в папке <a href="https://github.com/takedown-desing/agbina-prototype/tree/main/research/screenshots" target="_blank" rel="noopener" style="color:var(--brand-dark);font-weight:600">research/screenshots</a>.</p>
+      <div class="was-grid">
+        <div class="was"><a href="research/screenshots/agbina_home_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-home-top.jpg" alt="Главная, первый экран" loading="lazy"></a><div class="b"><b>Главная, верх</b><ul><li>Шапка с логотипом, телефоном, «Заказать звонок», поиском и «Войти»; оранжевое меню из семи пунктов</li><li>Слайдер: один сорт на слайде (Petunia Baby Gioconda F1 и ещё пять), кнопка «Перейти в каталог» ведёт на карточку сорта</li><li>H1 нет; кто продавец, для кого и как купить, первый экран не говорит</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_home_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-home-mid.jpg" alt="Главная, середина" loading="lazy"></a><div class="b"><b>Главная, середина</b><ul><li>Четыре иконки с подписями «Ассортимент: широкий ассортимент товаров на любой вкус», «Доверие: результат работы всегда проходит проверку», на десктопе перекрыты cookie-баннером</li><li>10 логотипов брендов без статуса и сроков</li><li>«Наши контакты»: надпись «Загрузка карты…» на 400 px, карта не грузится</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_home_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-home-bottom.jpg" alt="Главная, низ" loading="lazy"></a><div class="b"><b>Главная, низ</b><ul><li>Оранжевая полоса «Нужна консультация?» с текстом про «различные услуги, разнообразие работ, обзор типовых проектов и расчёт стоимости услуг»: шаблон агентства, не про семена</li><li>Подвал без реквизитов, ассоциаций, ссылок на прайс и условия</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_home_mobile.jpeg" target="_blank"><img src="research/screenshots/was/was-home-mobile.jpg" alt="Главная на телефоне" loading="lazy" style="max-height:520px;object-fit:cover;object-position:top"></a><div class="b"><b>Главная на телефоне</b><ul><li>PageSpeed mobile 45/100, LCP 63,2 с, HTML 525 КБ</li><li>Первый экран: слайдер и кнопка, ниже те же иконки и бренды</li><li>viewport с запретом масштабирования на 34 страницах (техаудит)</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_catalog_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-catalog-top.jpg" alt="Каталог" loading="lazy"></a><div class="b"><b>Каталог</b><ul><li>Таблица из 11 столбцов: наименование, сорт, цвет, летник/многолетник, производитель, высота, форма семян, минимальный заказ, остаток, цена за 1 000 шт или 1 г, корзина</li><li>50 строк на странице, 220 страниц, около 11 000 позиций; 3 567 чекбоксов фильтров в HTML, 3,7 МБ</li><li>Слева 11 разделов, логотипы производителей, «Скачать прейскурант»</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_product_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-product-top.jpg" alt="Карточка товара" loading="lazy"></a><div class="b"><b>Карточка товара</b><ul><li>Описание, характеристики, «Наличие: Есть», цена, «В корзину»</li><li>Фасовка и минимальный заказ не рядом с ценой, нет срока поставки, бренда, похожих сортов</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_opt_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-opt-top.jpg" alt="Оптовикам" loading="lazy"></a><div class="b"><b>«Оптовикам»</b><ul><li>Скидка 5 / 8 / 10 / 15 % по покупкам за сезон от 200 000 до более 1 000 000 ₽, 5 % членам АППМ</li><li>Текстом, без таблицы, CTA и формы</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_sroki_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-sroki-top.jpg" alt="Сроки доставки" loading="lazy"></a><div class="b"><b>«Сроки доставки заказа»</b><ul><li>Красное уведомление «Доставка под заказ временно приостановлена! Продажа осуществляется из наличия со склада»</li><li>Ниже: предзаказ круглый год, поставка 1 октября — 1 марта, до 60 дней, сроки по брендам; склад в Подмосковье с прейскурантами А-К и Л-Я</li><li>Страница спрятана в разделе «Полезная информация»</li></ul></div></div>
+        <div class="was"><a href="research/screenshots/agbina_contacts_desktop.jpeg" target="_blank"><img src="research/screenshots/was/was-contacts-top.jpg" alt="Контакты" loading="lazy"></a><div class="b"><b>«Контакты» и корзина</b><ul><li>«Загрузка карты…», адрес, режим, «Список офисов: Королёв»; без ролей телефонов и мессенджеров</li><li>Пустая корзина: «выберите товар и нажмите В корзину», без альтернативы прислать список</li></ul></div></div>
+      </div>
+    </section>
+
+    <section class="rat-sec" id="sources">
+      <h2>Конкуренты и источники</h2>
+      <p class="sub">Конкуренты взяты из ТОП-10 Яндекса (Arsenkin, Москва, 67 запросов; Keys.so, 14 запросов) и Google (Arsenkin и Ahrefs). В таблице число попаданий в ТОП-10 из 67 запросов и что у них на главной, чего нет у Агбины.</p>
+      <div style="overflow-x:auto">
+        <table class="src-table">
+          <tr><th>Сайт</th><th>Яндекс</th><th>Google</th><th>DR / трафик Google</th><th>Что взяли для прототипа</th></tr>
+          <tr><td><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">optom.semena-tut.ru</a></td><td>51</td><td>53</td><td>9 / 5 483</td><td>H1 «Интернет-магазин профессиональных семян № 1», плитки категорий, «7 аргументов» с цифрами, стена брендов, адрес и мессенджеры в шапке</td></tr>
+          <tr><td><a href="https://profsemcvet.com/" target="_blank" rel="noopener">profsemcvet.com</a></td><td>30</td><td>11</td><td>2,4 / 123</td><td>Хиты с остатком «В наличии: 0,45 тыс. шт.» и ценой, акции, «Условия работы» на первом экране</td></tr>
+          <tr><td><a href="https://semenakupi.ru/professionalnye-semena-tsvetov/" target="_blank" rel="noopener">semenakupi.ru</a></td><td>29</td><td>1</td><td>1,8 / 176</td><td>Фильтр по производителям, карточки с брендом, фасовкой 100 / 1 000 шт и ценой; «с 1997 года, эксклюзивные дистрибьюторы»</td></tr>
+          <tr><td><a href="https://semenagavrish.ru/semena-optom/" target="_blank" rel="noopener">semenagavrish.ru</a></td><td>26</td><td>44</td><td>38 / 29 753</td><td>Страница «Семена оптом»: способы покупки, минимальная сумма, оплата и отгрузка</td></tr>
+          <tr><td><a href="https://onlinesemena.ru/catalog/cemena-cvetov-profi.html" target="_blank" rel="noopener">onlinesemena.ru</a></td><td>22</td><td>4</td><td>30 / 5 907</td><td>Раздел «Семена цветов ПРОФИ» с ценами и списком 10 брендов, единственный FAQ среди 36 страниц</td></tr>
+          <tr><td><a href="https://www.seed.ru/" target="_blank" rel="noopener">seed.ru (Дом семян)</a></td><td>7</td><td>37</td><td>18 / 1 535</td><td>H1 «Продажа семян оптом», новинки с ценой, «92 года», лента брендов, адреса с картой, подвал с условиями и скидками</td></tr>
+          <tr><td><a href="https://agroopt-market.ru/" target="_blank" rel="noopener">agroopt-market.ru</a></td><td>12</td><td>36</td><td>1,6 / 3 981</td><td>Топбар «Как заказать / Прайс / Сертификаты / Оплата / Доставка», плитки категорий с числом товаров, лестница цен, WhatsApp / Telegram / MAX</td></tr>
+          <tr><td><a href="https://www.semenasad.ru/catalog/semena_tsvetov/" target="_blank" rel="noopener">semenasad.ru (Поиск)</a></td><td>3</td><td>34</td><td>30 / 2 948</td><td>Профсемена как отдельное направление для производителей посадочного материала, прайс</td></tr>
+          <tr><td><a href="https://sibseed.ru/catalog/semena/professionalnye_semena_tsvetov/" target="_blank" rel="noopener">sibseed.ru</a></td><td>15</td><td>31</td><td>19 / 5 308</td><td>Плитка 60 культур с фото, фильтр «в наличии», строки с брендом, фасовкой и ценой «руб/упак»</td></tr>
+          <tr><td><a href="https://semco.ru/" target="_blank" rel="noopener">semco.ru</a></td><td>13</td><td>12</td><td>27 / 27 231</td><td>«Главное — забота о клиентах» с цифрами, PDF-каталог, отзывы с рейтингом, кнопка «Оптовым покупателям» на товаре</td></tr>
+          <tr><td><a href="https://greenagri.ru/professionalnye-semena-1/professionalnye-semena-cvetov/" target="_blank" rel="noopener">greenagri.ru</a></td><td>3</td><td>14</td><td>1,1 / 1 575</td><td>Алфавитная плитка культур, «компенсируем доставку от 15 до 100 %», «работаем с фермерами и юрлицами»</td></tr>
+          <tr><td><a href="https://prof-semena.ru/" target="_blank" rel="noopener">prof-semena.ru</a></td><td>10</td><td>0</td><td>0 / 3</td><td>Разделы «Семена цветов Профи большая / малая упаковка», «с 2012 года», прямые поставки</td></tr>
+          <tr><td>ozon.ru, wildberries.ru, market.yandex.ru</td><td>40 / 27 / 15</td><td>29 / 14 / 0</td><td></td><td>Маркетплейсы забирают запросы по культурам (пальмы, кактусы, суккуленты, цикламен) мелкими фасовками</td></tr>
+          <tr><td>agbina.ru</td><td>3</td><td>3</td><td>11 / 85</td><td>Только брендовые запросы; agbina.com в Google по 12 запросам, включая 9 место по «семена деревьев и кустарников оптом»</td></tr>
+        </table>
+      </div>
+      <p class="muted small" style="margin-top:12px">Источники: WordKeeper (Wordstat), Keys.so, Ahrefs API v3, Arsenkin, PageSpeed Insights, обход страниц curl и Playwright, техаудит и CRO-аудит Addu от 22.07.2026. Ограничения и полные таблицы в <a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/RESEARCH.md" target="_blank" rel="noopener" style="color:var(--brand-dark);font-weight:600">RESEARCH.md</a>.</p>
+    </section>
+
+    <section class="rat-sec" id="queries">
+      <h2>Запросы, по которым снималась выдача и спрос</h2>
+      <p class="sub">Частотность Wordstat по России (WordKeeper, базовая / точная «!»). Полный список из 100 фраз с Москвой: <a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/data/demand.md" target="_blank" rel="noopener" style="color:var(--brand-dark);font-weight:600">data/demand.md</a>.</p>
+      <div style="overflow-x:auto">
+        <table class="src-table">
+          <tr><th>Группа</th><th>Запросы (показов в месяц, Россия)</th></tr>
+          <tr><td>Ниша</td><td>профессиональные семена 20 087 / 411; семена оптом 13 970 / 740; профессиональные семена интернет магазин 9 980 / 225; купить семена оптом 4 411 / 167; профессиональные семена цветов 1 789 / 172; семена оптом от производителя 798 / 124; семена цветов оптом 731 / 86; профессиональные семена цветов купить 486 / 178; поставщик семян 484; семена цветов профессиональные оптом 319 / 44; семена оптом москва 155; семена для питомников 104</td></tr>
+          <tr><td>Культуры</td><td>семена пальм 3 392; семена кактусов 2 993; семена виолы 2 021; семена цикламена 1 882; семена петунии профессиональные 1 221 / 106; семена суккулентов 1 038; семена петунии профессиональные купить 445 / 118; семена редких растений 360; семена хвойных купить 302; семена экзотических растений 289; семена петунии оптом 197; семена бегонии оптом 36; семена бархатцев оптом 41</td></tr>
+          <tr><td>Бренды</td><td>агбина 657 / 133; семена агбина 286; sakata семена 237; агбина семена официальный сайт 144 / 111; pan american семена 121; бенари семена 82; семена takii 51; семена benary 46; floranova семена 10; hem genetics семена 7</td></tr>
+          <tr><td>Сопутствующие</td><td>газонная трава оптом 326; семена газонных трав оптом 203; торфяные таблетки jiffy 94; dlf семена газон 88; basacote удобрение 22</td></tr>
+          <tr><td>Конкуренты в спросе (Keys.so, Москва)</td><td>белла профессиональные семена 2 789; соло профессиональные семена 2 319; семена оптом семена тут 2 224; профессиональные семена тут 2 026; семена оптом гавриш 245; аэлита семена оптом 182</td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="rat-sec" id="home">
+      <h2>Блоки главной страницы</h2>
+      <p class="sub">Нумерация как в карте блоков и в ярлыках прототипа.</p>
+
+      <div class="rat" id="h1">
+        <div class="head"><span class="num">1</span><h3>Верхняя полоса и шапка: адрес, режим, мессенджеры, «Отправить список»</h3><span class="tagchip mix">Существующий + новое</span></div>
+        <div class="why"><b>Зачем</b><p>Оптовик первым делом проверяет, где склад, когда работают и как быстро связаться. На сайте сейчас: телефон, «Заказать звонок», VK и «Войти»; адрес и режим только в подвале и на странице контактов.</p><b>Данные</b><ul><li>39 из 67 запросов ниши геозависимы (Arsenkin commerce): «семена оптом», «профессиональные семена», «семена для питомников», «семена для садовых центров»</li><li>Мессенджеры в шапке у 13 из 36 страниц конкурентов, ссылки «Как заказать / Прайс / Доставка» в топбаре у agroopt-market.ru</li><li>CRO-аудит: кнопка «Отправить список» как ключевой next step для B2B</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#top">верхняя полоса и шапка</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/header-semenatut.jpg" target="_blank"><img src="research/screenshots/competitors/header-semenatut.jpg" alt="optom.semena-tut.ru: шапка" loading="lazy"></a><figcaption><span>optom.semena-tut.ru, ТОП-1 Яндекса по «семена оптом»: адрес, режим, два телефона, два Telegram, «Выбор по брендам»</span><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/topbar-agroopt.jpg" target="_blank"><img src="research/screenshots/competitors/topbar-agroopt.jpg" alt="agroopt-market.ru: топбар" loading="lazy"></a><figcaption><span>agroopt-market.ru: «Как заказать, Прайс-лист, Сертификаты, Оплата, Доставка», WhatsApp, Telegram, MAX</span><a href="https://agroopt-market.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h2">
+        <div class="head"><span class="num">2</span><h3>Первый экран: H1 «Профессиональные семена оптом для питомников, садовых центров и озеленения», три факта и форма списка</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Первый экран должен за три секунды ответить: что продаём, кому, на каких условиях и что делать дальше. Сейчас его занимает слайдер из шести сортов без H1.</p><b>Данные</b><ul><li>«профессиональные семена» 20 087 показов в месяц, «семена оптом» 13 970, «профессиональные семена интернет магазин» 9 980: оба слова нужны в H1</li><li>H1 на главной отсутствует (техаудит 22.07.2026, проверено 16.09.2026); description уже говорит «работаем с юридическими лицами и фермерскими хозяйствами»</li><li>H1 с позиционированием у лидеров: semena-tut.ru «Интернет-магазин профессиональных семян цветов и овощей № 1», seed.ru «Продажа семян оптом», agroopt «Интернет-магазин семян оптом»</li><li>Форма списка: CRO-аудит (NEXT_STEP), пустая корзина сайта без альтернативы для оптовика</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#hero">первый экран</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/hero-tiles-semenatut.jpg" target="_blank"><img src="research/screenshots/competitors/hero-tiles-semenatut.jpg" alt="optom.semena-tut.ru: первый экран" loading="lazy"></a><figcaption><span>optom.semena-tut.ru: H1 про профессиональные семена, плитки Новинки / Хиты / Скидки и 8 категорий</span><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/hero-novinki-seed.jpg" target="_blank"><img src="research/screenshots/competitors/hero-novinki-seed.jpg" alt="seed.ru: первый экран" loading="lazy"></a><figcaption><span>seed.ru, ТОП-1 Google по «семена оптом»: «Оптовый интернет-магазин», меню категорий, H1 «Продажа семян оптом», новинки с ценой</span><a href="https://www.seed.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h3">
+        <div class="head"><span class="num">3</span><h3>Полоса цифр: 11 000 позиций, 11 производителей, 4 ассоциации, скидка до 15 %</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Четыре иконки «Ассортимент: широкий ассортимент товаров на любой вкус» ничего не доказывают. Цифры со страниц «Компания» и «Оптовикам» доказывают.</p><b>Данные</b><ul><li>Каталог: 220 страниц по 50 строк, 11 разделов, 11 производителей; членство в ISF, Fleuroselect, АНСК, АППМ с 2011 года (страница «Компания»)</li><li>Аргументы с цифрами у конкурентов: semena-tut.ru «20 000 товаров, от 1 000 ₽, с 2012 года», semco.ru «с 1991 года, 3 млн клиентов, 264 селекционных достижения», seed.ru «92 года, пятёрка крупнейших»</li><li>Брендовый спрос конкурентов выше («белла» 2 789, «соло» 2 319 против «агбина» 657): доказательства нужны на главной</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#facts">полоса цифр</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/arguments-semenatut.jpg" target="_blank"><img src="research/screenshots/competitors/arguments-semenatut.jpg" alt="optom.semena-tut.ru: 7 аргументов" loading="lazy"></a><figcaption><span>optom.semena-tut.ru: «7 аргументов сотрудничать с нами» с цифрами и условиями</span><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/care-arguments-semco.jpg" target="_blank"><img src="research/screenshots/competitors/care-arguments-semco.jpg" alt="semco.ru: аргументы" loading="lazy"></a><figcaption><span>semco.ru: «Главное — забота о клиентах»: с 1991 года, 3 млн клиентов, лаборатория, доставка от 1 дня</span><a href="https://semco.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h4">
+        <div class="head"><span class="num">4-5</span><h3>Разделы каталога с числом позиций и популярные культуры</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>С главной в каталог сейчас ведёт только пункт меню и промо-карточки сортов. Питомник ищет по культуре и группе, а не листает 220 страниц таблицы.</p><b>Данные</b><ul><li>11 разделов уже есть в каталоге сайта: однолетние и двулетние, многолетники, злаки, лиственные и хвойные деревья и кустарники, пальмы и саговники, папоротники, суккуленты, орхидеи, водные, овощные</li><li>Спрос по культурам: «семена пальм» 3 392, «семена кактусов» 2 993, «семена виолы» 2 021, «семена цикламена» 1 882, «семена петунии профессиональные» 1 221, «семена суккулентов» 1 038</li><li>Плитки категорий с числом товаров у agroopt-market.ru (24 плитки), 8 плиток у semena-tut.ru, 60 культур с фото у sibseed.ru, алфавит у greenagri.ru</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#catalog">разделы каталога</a> и <a href="prototypes/home.html#cultures">культуры</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/categories-count-agroopt.jpg" target="_blank"><img src="research/screenshots/competitors/categories-count-agroopt.jpg" alt="agroopt-market.ru: категории" loading="lazy"></a><figcaption><span>agroopt-market.ru: плитки категорий с числом товаров («Томат 518 товаров»)</span><a href="https://agroopt-market.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/culture-grid-sibseed.jpg" target="_blank"><img src="research/screenshots/competitors/culture-grid-sibseed.jpg" alt="sibseed.ru: культуры" loading="lazy"></a><figcaption><span>sibseed.ru: плитка 60 культур с фото на странице «Профессиональные семена цветов»</span><a href="https://sibseed.ru/catalog/semena/professionalnye_semena_tsvetov/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/delivery-alphabet-greenagri.jpg" target="_blank"><img src="research/screenshots/competitors/delivery-alphabet-greenagri.jpg" alt="greenagri.ru: алфавит культур" loading="lazy"></a><figcaption><span>greenagri.ru, ТОП-3 Google по «семена цветов оптом»: баннер про компенсацию доставки и алфавитная плитка культур</span><a href="https://greenagri.ru/professionalnye-semena-1/professionalnye-semena-cvetov/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h6">
+        <div class="head"><span class="num">6</span><h3>Со склада сейчас: сорта с ценой за 1 000 шт, минимальным заказом, остатком и брендом</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>На главной нет ни одного товара с ценой, хотя в каталоге цена, остаток и минимальный заказ есть в каждой строке. Оптовик сравнивает цену за 1 000 семян и фасовку до звонка.</p><b>Данные</b><ul><li>Цена в рублях на странице у 23 из 36 страниц конкурентов, наличие у 14, фасовка 1 000 шт у 10, 100 шт у 9</li><li>profsemcvet.com показывает «В наличии: 0,45 тыс. шт.» и цену прямо в хитах; semenakupi.ru — бренд, «в наличии», фасовку 100 / 1 000 шт; sibseed.ru — «руб/шт» и «руб/упак» с брендом</li><li>Сорта из слайдера сайта (петуния Baby Gioconda F1, виола Xtrada, виола рогатая, кальцеолярия, аквилегия) переносятся сюда с ценой и остатком</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#stock">со склада сейчас</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/hits-stock-profsemcvet.jpg" target="_blank"><img src="research/screenshots/competitors/hits-stock-profsemcvet.jpg" alt="profsemcvet.com: хиты с остатком" loading="lazy"></a><figcaption><span>profsemcvet.com, ТОП-10 Яндекса по 30 из 67 запросов: хиты с «В наличии: 0,45 тыс. шт.», брендом серии и ценой</span><a href="https://profsemcvet.com/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/filter-brand-semenakupi.jpg" target="_blank"><img src="research/screenshots/competitors/filter-brand-semenakupi.jpg" alt="semenakupi.ru: фильтр и карточки" loading="lazy"></a><figcaption><span>semenakupi.ru: фильтр по производителям, карточки с брендом, «в наличии», ценой и фасовкой 100 / 1 000 шт</span><a href="https://semenakupi.ru/professionalnye-semena-tsvetov/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/listing-brand-pack-sibseed.jpg" target="_blank"><img src="research/screenshots/competitors/listing-brand-pack-sibseed.jpg" alt="sibseed.ru: строки товаров" loading="lazy"></a><figcaption><span>sibseed.ru: строки «Петуния Шейк F1, Hem Genetics, фас. 100, 525 руб/шт», фильтр «в наличии (1 423)»</span><a href="https://sibseed.ru/catalog/semena/professionalnye_semena_tsvetov/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h7">
+        <div class="head"><span class="num">7</span><h3>Как купить: со склада сейчас или по предзаказу, сроки по брендам, шаги</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Главная маркетинговая проблема из CRO-аудита: покупатель сам собирает условия из «Оптовикам», «Сроки доставки», «Как работать с каталогом» и корзины. Условия предзаказа и склада нужны там, где принимается решение.</p><b>Данные</b><ul><li>Страница «Сроки доставки заказа»: предзаказ круглый год, поставка 1 октября — 1 марта, до 60 дней; Benary, PanAmerican, Hem Genetics 1,5 месяца; Syngenta, Takii, Farmen, Floranova 2 месяца; склад в Подмосковье с прейскурантами А-К и Л-Я</li><li>Там же красное уведомление «Доставка под заказ временно приостановлена»: в прототипе это баннер над блоком, который убирается, когда предзаказ откроется</li><li>semenagavrish.ru держит ТОП-10 Яндекса по 26 и Google по 44 запросам страницей «Семена оптом» с тремя способами покупки, минимумом 10 000 ₽ и правилами оплаты</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#buy">как купить</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/conditions-gavrish.jpg" target="_blank"><img src="research/screenshots/competitors/conditions-gavrish.jpg" alt="semenagavrish.ru: условия опта" loading="lazy"></a><figcaption><span>semenagavrish.ru/semena-optom: три способа купить оптом, минимальная сумма, оплата по счёту, отгрузка после оплаты</span><a href="https://semenagavrish.ru/semena-optom/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/was/was-sroki-top.jpg" target="_blank"><img src="research/screenshots/was/was-sroki-top.jpg" alt="agbina.ru: сроки доставки" loading="lazy"></a><figcaption><span>agbina.ru сейчас: условия предзаказа и уведомление о приостановке на странице «Сроки доставки заказа» в «Полезной информации»</span><a href="https://agbina.ru/help/sroki_dostavki_zakaza/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h8">
+        <div class="head"><span class="num">8</span><h3>Скидки по обороту таблицей с CTA «Запросить условия»</h3><span class="tagchip mix">Существующий + новое</span></div>
+        <div class="why"><b>Зачем</b><p>Шкала 5 / 8 / 10 / 15 % — сильный B2B-аргумент, но живёт текстом на странице «Оптовикам» без CTA. На главной она показывает питомнику, с какого оборота выгоднее покупать в одном месте.</p><b>Данные</b><ul><li>Страница «Оптовикам»: от 200 000 ₽ за сезон 5 %, от 400 000 ₽ 8 %, от 600 000 ₽ 10 %, более 1 000 000 ₽ 15 %, 5 % членам АППМ; распространяется на газон, деревья и кустарники, Compo Expert, Jiffy</li><li>Скидки упоминают 26 из 36 страниц конкурентов; semena-tut.ru «прогрессивная система скидок со второго заказа», gavrish «купон 30 % при заказе от 20 000 ₽»</li><li>CRO-аудит: «добавить калькулятор или таблицу „какую скидку получите“, CTA на заявку»</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#discount">скидки по обороту</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/was/was-opt-top.jpg" target="_blank"><img src="research/screenshots/was/was-opt-top.jpg" alt="agbina.ru: Оптовикам" loading="lazy"></a><figcaption><span>agbina.ru сейчас: шкала скидок текстом без таблицы и CTA</span><a href="https://agbina.ru/help/opt/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/promo-profsemcvet.jpg" target="_blank"><img src="research/screenshots/competitors/promo-profsemcvet.jpg" alt="profsemcvet.com: акции" loading="lazy"></a><figcaption><span>profsemcvet.com: акции с условиями и сроком («скидка 28 % в августе») на главной</span><a href="https://profsemcvet.com/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h9">
+        <div class="head"><span class="num">9</span><h3>Производители со сроком поставки и ссылкой в каталог по бренду</h3><span class="tagchip mix">Существующий + новое</span></div>
+        <div class="why"><b>Зачем</b><p>Логотипы на сайте есть, но без статуса и сроков и без перехода в каталог с фильтром. Питомник часто ищет конкретную серию конкретного производителя.</p><b>Данные</b><ul><li>Спрос по брендам: «sakata семена» 237, «pan american семена» 121, «бенари семена» 82, «семена takii» 51, «семена benary» 46; по Keys.so agbina.ru стоял по «syngenta официальный» и «бенари семена официальный сайт» со старых URL, которые теперь 404</li><li>Сроки поставки по брендам уже описаны на странице «Сроки доставки»</li><li>semena-tut.ru: «Выбор по брендам» в шапке и стена из 48 логотипов; semenakupi.ru: фильтр по производителям в разделе</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#brands">производители</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/brands-semenatut.jpg" target="_blank"><img src="research/screenshots/competitors/brands-semenatut.jpg" alt="optom.semena-tut.ru: бренды" loading="lazy"></a><figcaption><span>optom.semena-tut.ru: стена из 48 логотипов брендов, каждый ведёт в каталог</span><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/about-brands-seed.jpg" target="_blank"><img src="research/screenshots/competitors/about-brands-seed.jpg" alt="seed.ru: о компании и бренды" loading="lazy"></a><figcaption><span>seed.ru: «92 года» и лента брендов под первым экраном</span><a href="https://www.seed.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h10">
+        <div class="head"><span class="num">10</span><h3>Не только цветы: деревья, хвойные, пальмы, суккуленты, редкие растения</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Это единственное, чего нет ни у одного конкурента из ТОП-10 по профсеменам цветов, а у Агбины есть в каталоге и на странице «Компания» (обмен с ботаническими садами). На главной об этом ни слова.</p><b>Данные</b><ul><li>«семена пальм» 3 392 показа в месяц, «семена кактусов» 2 993, «семена суккулентов» 1 038, «семена редких растений» 360, «семена экзотических растений» 289, «семена хвойных купить» 302, «семена деревьев и кустарников оптом» (agbina.com уже на 9 месте в Google)</li><li>В Яндексе по этим запросам стоят маркетплейсы и розница (ozon.ru 40, wildberries.ru 27 попаданий из 67), по хвойным — питомники oreshka-pitomnik.ru, treeseed.ru</li><li>Разделы каталога сайта: лиственные и хвойные деревья и кустарники, пальмы и саговники, папоротники, суккуленты, орхидеи, водные растения</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#rare">не только цветы</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/was/was-catalog-top.jpg" target="_blank"><img src="research/screenshots/was/was-catalog-top.jpg" alt="agbina.ru: каталог" loading="lazy"></a><figcaption><span>agbina.ru сейчас: 11 разделов в левом меню каталога, включая деревья, хвойные, пальмы, папоротники, суккуленты, орхидеи</span><a href="https://agbina.ru/catalog/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h11">
+        <div class="head"><span class="num">11</span><h3>Доставка, самовывоз, оплата по счёту и документы</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>На сайте нет раздела «Доставка и оплата», хотя для юрлица это условие сделки: счёт, договор, накладная, кто везёт и сколько стоит.</p><b>Данные</b><ul><li>Доставка описана у 31 из 36 страниц конкурентов, юрлица/безнал/счёт у 14, самовывоз у 8</li><li>semco.ru: «доставка от 1 дня по России, в Беларусь и Казахстан»; euro-semena.ru: СДЭК, Почта России, оплата при получении; greenagri.ru: «компенсируем доставку от 15 до 100 %»</li><li>Условия и стоимость в прототипе помечены как условные: их заполняет клиент</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#delivery">доставка и оплата</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/addresses-map-seed.jpg" target="_blank"><img src="research/screenshots/competitors/addresses-map-seed.jpg" alt="seed.ru: адреса и карта" loading="lazy"></a><figcaption><span>seed.ru: адреса базы и магазинов с телефонами и картой на главной</span><a href="https://www.seed.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/novinki-opt-button-semco.jpg" target="_blank"><img src="research/screenshots/competitors/novinki-opt-button-semco.jpg" alt="semco.ru: новинки с кнопкой оптовым" loading="lazy"></a><figcaption><span>semco.ru: «Бесплатная доставка от 4 000 ₽», у каждого товара кнопка «Оптовым покупателям»</span><a href="https://semco.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h12">
+        <div class="head"><span class="num">12</span><h3>Почему Агбина: ассоциации, ботанические сады, собственные направления, подбор</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Доказательства доверия лежат на странице «Компания»: ISF, Fleuroselect, АНСК, АППМ с 2011 года, обмен с ботаническими садами, DLF, Jiffy, Compo Expert. Конкуренты выносят такое на главную, потому что их ищут по названию магазина.</p><b>Данные</b><ul><li>«лет на рынке» или год основания у 13 из 36 страниц, сертификаты у 4, гарантия у 19</li><li>semenakupi.ru: «с 1997 года, эксклюзивные дистрибьюторы»; prof-semena.ru: «с 2012 года, прямое сотрудничество с производителями»; seed.ru: «92 года, входит в пятёрку крупнейших семенных фирм»</li><li>CRO-аудит: «нет короткого trust-блока рядом с решением»</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#why">почему Агбина</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/care-arguments-semco.jpg" target="_blank"><img src="research/screenshots/competitors/care-arguments-semco.jpg" alt="semco.ru: аргументы" loading="lazy"></a><figcaption><span>semco.ru: четыре аргумента с цифрами, собственная лаборатория, доставка</span><a href="https://semco.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/arguments-semenatut.jpg" target="_blank"><img src="research/screenshots/competitors/arguments-semenatut.jpg" alt="optom.semena-tut.ru: 7 аргументов" loading="lazy"></a><figcaption><span>optom.semena-tut.ru: «7 аргументов»: ассортимент, весовые семена, юр- и физлица, минимум, скидки, самовывоз, опыт</span><a href="https://optom.semena-tut.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h13">
+        <div class="head"><span class="num">13-14</span><h3>Отзывы питомников и новости каталога</h3><span class="tagchip mix">Существующий + новое</span></div>
+        <div class="why"><b>Зачем</b><p>Отзывов на сайте нет, новости есть в разделе, но на главной не показаны. Для B2B-покупателя отзыв другого питомника весит больше, чем текст о компании; новинки каталога показывают, что ассортимент живой.</p><b>Данные</b><ul><li>Отзывы у 23 из 36 страниц конкурентов, новинки у 27; semco.ru показывает «О нас пишут» с рейтингом и датами, agroopt-market.ru и semena-tut.ru — новости на главной</li><li>Новости сайта: «Ассортимент Floranova теперь в онлайн-каталоге» (7 ноября 2025), черенки и сеянцы Syngenta FloriPro, каланхоэ Queen</li><li>Тексты отзывов в прототипе условные: заменить реальными и дать ссылку на отзывы в Яндекс Картах (в Google по «агбина» карточка отзывов Яндекс Карт стоит на 8 месте)</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#reviews">отзывы</a> и <a href="prototypes/home.html#news">новости</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/competitors/pdf-reviews-semco.jpg" target="_blank"><img src="research/screenshots/competitors/pdf-reviews-semco.jpg" alt="semco.ru: PDF-каталог и отзывы" loading="lazy"></a><figcaption><span>semco.ru: «Скачайте каталог продукции (PDF)» и «О нас пишут» с рейтингом</span><a href="https://semco.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/hits-tiered-price-agroopt.jpg" target="_blank"><img src="research/screenshots/competitors/hits-tiered-price-agroopt.jpg" alt="agroopt-market.ru: хиты" loading="lazy"></a><figcaption><span>agroopt-market.ru: хиты с лестницей цен «от 5 шт, от 10 шт» и выбором упаковки, ниже новости о сортах</span><a href="https://agroopt-market.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h15">
+        <div class="head"><span class="num">15</span><h3>Отправить список семян: форма с файлом и шаги после заявки</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Полоса «Нужна консультация?» на сайте обещает «обзор типовых проектов и расчёт стоимости услуг». Оптовик приходит со списком сортов на сезон и хочет отдать его, а не «заказать звонок».</p><b>Данные</b><ul><li>CRO-аудит: NEXT_STEP «форма „отправить список семян“: организация, контакты, файл, желаемый срок» и PROCESS «5 шагов после заявки»</li><li>Пустая корзина сайта не предлагает альтернативы; на странице «Сроки доставки» заказы принимаются на info@agbina.com, то есть список по почте уже рабочий сценарий</li><li>Формы заявки у 9 из 36 страниц конкурентов, мессенджеры у 13</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#ask">отправить список</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/was/was-home-bottom.jpg" target="_blank"><img src="research/screenshots/was/was-home-bottom.jpg" alt="agbina.ru: Нужна консультация" loading="lazy"></a><figcaption><span>agbina.ru сейчас: «Нужна консультация?» с шаблонным текстом про услуги и кнопкой «Отправить»</span><a href="https://agbina.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/was/was-basket-top.jpg" target="_blank"><img src="research/screenshots/was/was-basket-top.jpg" alt="agbina.ru: корзина" loading="lazy"></a><figcaption><span>agbina.ru сейчас: пустая корзина без варианта «прислать список»</span><a href="https://agbina.ru/personal/basket/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h16">
+        <div class="head"><span class="num">16</span><h3>FAQ: восемь вопросов перед заказом</h3><span class="tagchip res">Новый: по исследованию</span></div>
+        <div class="why"><b>Зачем</b><p>Ответы на вопросы «со склада или под заказ», «когда привезут», «минимальный заказ», «как получить счёт», «что если сорта нет» на сайте есть, но разбросаны по четырём страницам. FAQ собирает их и даёт разметку FAQPage.</p><b>Данные</b><ul><li>FAQ есть только у 1 из 36 страниц конкурентов (onlinesemena.ru): точка отстройки</li><li>CRO-аудит: блок FAQ «когда привезут, можно ли купить со склада, как получить счёт, что делать с заменами, какие документы, как работает скидка»</li><li>Половина хвостов по «семена петунии» информационные («когда сажать семена петунии на рассаду» 12 054): вопросы и статьи держат этот спрос</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#faq">FAQ</a></div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/was/was-sroki-top.jpg" target="_blank"><img src="research/screenshots/was/was-sroki-top.jpg" alt="agbina.ru: сроки доставки" loading="lazy"></a><figcaption><span>agbina.ru сейчас: ответы на вопросы про сроки и способы покупки на странице «Сроки доставки заказа»</span><a href="https://agbina.ru/help/sroki_dostavki_zakaza/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+
+      <div class="rat" id="h17">
+        <div class="head"><span class="num">17-19</span><h3>Контакты с ролями и картой, подвал с реквизитами, липкая панель на мобильном</h3><span class="tagchip mix">Существующий + новое</span></div>
+        <div class="why"><b>Зачем</b><p>Блок контактов на главной есть, но карта не загружается, а три телефона идут без ролей. Подвал не содержит реквизитов, ассоциаций и ссылок на соседние магазины Агбины. На телефоне нужен быстрый доступ к звонку и списку.</p><b>Данные</b><ul><li>CRO-аудит: «добавить быстрые роли: отдел продаж, консультация по предзаказу, складское наличие, документы/счёт, SLA ответа»</li><li>seed.ru и profsemcvet.com показывают адреса с картой на главной; agroopt-market.ru — ОГРН и реквизиты в подвале</li><li>По «агбина» в Яндексе agbina-jiffy.ru, agbina-grass.ru и agbina-compo.ru стоят на 2, 4 и 5 местах, а с главной agbina.ru на них нет ссылок; agbina-grass.ru получает из Google 1 150 визитов в месяц против 85 у agbina.ru</li><li>PageSpeed mobile 45/100: липкая панель с телефоном и списком вместо тяжёлого слайдера</li></ul><div class="proto">В прототипе: <a href="prototypes/home.html#contacts">контакты</a>, подвал и панель внизу на мобильном</div></div>
+        <div class="shots">
+          <figure><a href="research/screenshots/was/was-contacts-top.jpg" target="_blank"><img src="research/screenshots/was/was-contacts-top.jpg" alt="agbina.ru: контакты" loading="lazy"></a><figcaption><span>agbina.ru сейчас: «Загрузка карты…», адрес и режим без ролей телефонов</span><a href="https://agbina.ru/contacts/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+          <figure><a href="research/screenshots/competitors/addresses-map-seed.jpg" target="_blank"><img src="research/screenshots/competitors/addresses-map-seed.jpg" alt="seed.ru: адреса" loading="lazy"></a><figcaption><span>seed.ru: адреса с телефонами каждого подразделения и карта</span><a href="https://www.seed.ru/" target="_blank" rel="noopener">открыть страницу</a></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="rat-sec" id="removed">
+      <h2>Что убрали и исправили</h2>
+      <div style="overflow-x:auto">
+        <table class="src-table">
+          <tr><th>Было на сайте</th><th>Решение в прототипе</th></tr>
+          <tr><td>Слайдер из шести сортов на первом экране, без H1 и оффера</td><td>Первый экран с H1 «Профессиональные семена оптом для питомников, садовых центров и озеленения», тремя фактами и формой списка; сорта перенесены в блок «Со склада сейчас» с ценой и остатком</td></tr>
+          <tr><td>Четыре иконки с шаблонными подписями, на десктопе под cookie-баннером</td><td>Полоса цифр: 11 000 позиций, 11 производителей, 4 ассоциации, скидка до 15 %</td></tr>
+          <tr><td>10 логотипов брендов без статуса и сроков</td><td>Карточки производителей со сроком поставки и ссылкой в каталог с фильтром</td></tr>
+          <tr><td>«Наши контакты» с надписью «Загрузка карты…» на 400 px</td><td>Статичная карта Королёва с точкой, телефоны с ролями, реквизиты</td></tr>
+          <tr><td>Полоса «Нужна консультация?» с текстом про «типовые проекты и расчёт стоимости услуг»</td><td>Блок «Пришлите список семян на сезон» с формой, файлом и шагами после заявки</td></tr>
+          <tr><td>Условия покупки на четырёх страницах: «Оптовикам», «Сроки доставки», «Как работать с каталогом», корзина; «Прейскуранты» по /help/price/ отдают «Элемент не найден»</td><td>Блоки «Как купить» (склад и предзаказ, сроки по брендам, шаги), «Скидки по обороту» таблицей, «Доставка и оплата», FAQ; ссылка на рабочую страницу прейскурантов /prices/</td></tr>
+          <tr><td>Уведомление «Доставка под заказ временно приостановлена» противоречит тексту о предзаказе на той же странице</td><td>Баннер над блоком «Как купить», который убирается, когда предзаказ откроется; путь «Со склада» помечен «сейчас»</td></tr>
+          <tr><td>Меню: Каталог, Компания, Новости, Оптовикам, Бренды, Полезная информация, Контакты; условия спрятаны в «Полезной информации»</td><td>Меню под маршрут оптовика: Каталог, Производители, Как купить, Оптовикам, Доставка, Компания, Контакты</td></tr>
+          <tr><td>«Заказать звонок» и VK как единственные способы связи</td><td>Telegram и WhatsApp в шапке и контактах, «Отправить список» в шапке, форма на первом экране, модальная форма, липкая панель на мобильном</td></tr>
+          <tr><td>Деревья, хвойные, пальмы, суккуленты и ботанические сады упомянуты только на странице «Компания»</td><td>Разделы каталога и блок «Не только цветы» на главной</td></tr>
+          <tr><td>Подвал без реквизитов, ассоциаций и ссылок на agbina-grass.ru, Jiffy, Compo Expert, agbina.com</td><td>Подвал с каталогом по разделам, условиями, компанией, соседними магазинами и реквизитами</td></tr>
+          <tr><td>Вне прототипа, из техаудита: robots.txt закрывает сайт, sitemap ведёт на технический домен, старые URL отдают 404 без редиректов, нет canonical, счётчиков и security headers, viewport с запретом масштабирования, LCP 63 с на мобильном</td><td>Открыть robots, исправить sitemap, поставить 301 со старых адресов на новые карточки и бренды, canonical, Метрику и Search Console, убрать user-scalable=no, ускорить мобильную версию</td></tr>
+        </table>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,410 @@
+{
+ "code": "TASK_RESULT",
+ "task_id": "31360107",
+ "result": [
+  {
+   "query": "семена оптом",
+   "localization": 22,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена цветов оптом",
+   "localization": 0,
+   "geo": false,
+   "commerce": 98
+  },
+  {
+   "query": "профессиональные семена",
+   "localization": 11,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "профессиональные семена цветов",
+   "localization": 10,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена цветов профессиональные оптом",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена петунии оптом",
+   "localization": 11,
+   "geo": true,
+   "commerce": 92
+  },
+  {
+   "query": "семена петунии профессиональные",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена виолы оптом",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена для питомников",
+   "localization": 20,
+   "geo": true,
+   "commerce": 86
+  },
+  {
+   "query": "семена оптом для фермеров",
+   "localization": 10,
+   "geo": true,
+   "commerce": 91
+  },
+  {
+   "query": "семена оптом от производителя",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена оптом москва",
+   "localization": 20,
+   "geo": false,
+   "commerce": 98
+  },
+  {
+   "query": "семена декоративных растений оптом",
+   "localization": 13,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена многолетников оптом",
+   "localization": 13,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена деревьев и кустарников оптом",
+   "localization": 10,
+   "geo": true,
+   "commerce": 93
+  },
+  {
+   "query": "семена хвойных оптом",
+   "localization": 10,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена benary",
+   "localization": 0,
+   "geo": false,
+   "commerce": 76
+  },
+  {
+   "query": "бенари семена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 79
+  },
+  {
+   "query": "pan american семена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 81
+  },
+  {
+   "query": "семена syngenta цветы",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена takii",
+   "localization": 0,
+   "geo": false,
+   "commerce": 100
+  },
+  {
+   "query": "kieft seeds",
+   "localization": 0,
+   "geo": false,
+   "commerce": 60
+  },
+  {
+   "query": "hem genetics семена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 74
+  },
+  {
+   "query": "floranova семена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена цветов для рассады оптом",
+   "localization": 30,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена петунии драже",
+   "localization": 0,
+   "geo": false,
+   "commerce": 92
+  },
+  {
+   "query": "купить семена оптом",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена оптом прайс",
+   "localization": 10,
+   "geo": true,
+   "commerce": 98
+  },
+  {
+   "query": "поставщик семян",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "оптовая продажа семян",
+   "localization": 14,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена для садовых центров",
+   "localization": 40,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "агбина",
+   "localization": 0,
+   "geo": false,
+   "commerce": 36
+  },
+  {
+   "query": "семена цветов для профессионалов",
+   "localization": 10,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена газонных трав оптом",
+   "localization": 50,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "торфяные таблетки jiffy оптом",
+   "localization": 10,
+   "geo": true,
+   "commerce": 92
+  },
+  {
+   "query": "удобрения compo expert",
+   "localization": 10,
+   "geo": true,
+   "commerce": 93
+  },
+  {
+   "query": "семена цветов купить оптом в москве",
+   "localization": 30,
+   "geo": false,
+   "commerce": 99
+  },
+  {
+   "query": "семена однолетников оптом",
+   "localization": 25,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена цикламена оптом",
+   "localization": 0,
+   "geo": false,
+   "commerce": 100
+  },
+  {
+   "query": "семена бегонии оптом",
+   "localization": 0,
+   "geo": false,
+   "commerce": 100
+  },
+  {
+   "query": "семена цветов оптом для питомников",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "профессиональные семена цветов купить",
+   "localization": 10,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена цветов в профессиональной упаковке",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена для промышленного садоводства",
+   "localization": 20,
+   "geo": true,
+   "commerce": 93
+  },
+  {
+   "query": "семена цветов для озеленения",
+   "localization": 20,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена деревьев оптом",
+   "localization": 20,
+   "geo": true,
+   "commerce": 86
+  },
+  {
+   "query": "семена кустарников оптом",
+   "localization": 30,
+   "geo": true,
+   "commerce": 86
+  },
+  {
+   "query": "sakata семена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 92
+  },
+  {
+   "query": "семена цветов драже",
+   "localization": 20,
+   "geo": true,
+   "commerce": 74
+  },
+  {
+   "query": "семена бархатцев оптом",
+   "localization": 0,
+   "geo": false,
+   "commerce": 100
+  },
+  {
+   "query": "семена сальвии оптом",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена оптом каталог",
+   "localization": 30,
+   "geo": true,
+   "commerce": 98
+  },
+  {
+   "query": "профессиональные семена интернет магазин",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена кактусов",
+   "localization": 0,
+   "geo": false,
+   "commerce": 82
+  },
+  {
+   "query": "семена пальм",
+   "localization": 10,
+   "geo": true,
+   "commerce": 93
+  },
+  {
+   "query": "семена цикламена",
+   "localization": 0,
+   "geo": false,
+   "commerce": 89
+  },
+  {
+   "query": "семена виолы",
+   "localization": 30,
+   "geo": true,
+   "commerce": 100
+  },
+  {
+   "query": "семена суккулентов",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена редких растений",
+   "localization": 0,
+   "geo": false,
+   "commerce": 74
+  },
+  {
+   "query": "семена экзотических растений",
+   "localization": 0,
+   "geo": false,
+   "commerce": 88
+  },
+  {
+   "query": "семена петунии профессиональные купить",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "профессиональные семена петунии",
+   "localization": 0,
+   "geo": false,
+   "commerce": 93
+  },
+  {
+   "query": "семена агбина",
+   "localization": 0,
+   "geo": false,
+   "commerce": 60
+  },
+  {
+   "query": "агбина семена официальный сайт",
+   "localization": 10,
+   "geo": true,
+   "commerce": 68
+  },
+  {
+   "query": "семена оптом цена",
+   "localization": 20,
+   "geo": true,
+   "commerce": 98
+  },
+  {
+   "query": "семена хвойных купить",
+   "localization": 11,
+   "geo": true,
+   "commerce": 89
+  },
+  {
+   "query": "семена декоративных кустарников",
+   "localization": 10,
+   "geo": true,
+   "commerce": 83
+  }
+ ],
+ "created_at": "2026-09-16 13:53:50",
+ "finished_at": "2026-09-16 13:54:36"
+}

@@ -1,0 +1,22 @@
+{
+  "targets": [
+    {
+      "url": "agbina.ru/",
+      "domain_rating": 11.0,
+      "org_traffic": 85,
+      "org_keywords": 47,
+      "org_keywords_1_3": 7,
+      "refdomains": 1182,
+      "backlinks": 18149
+    },
+    {
+      "url": "agbina.com/",
+      "domain_rating": 22.0,
+      "org_traffic": 131,
+      "org_keywords": 105,
+      "org_keywords_1_3": 10,
+      "refdomains": 608,
+      "backlinks": 1616
+    }
+  ]
+}

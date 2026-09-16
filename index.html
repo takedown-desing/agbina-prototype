@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Агбина: прототип главной и исследование конкурентов</title>
+<meta name="description" content="Прототип главной страницы agbina.ru по итогам конкурентного анализа: спрос Wordstat по 100 фразам, выдача Яндекса и Google, 26 страниц конкурентов, аудиты Addu. Каждый блок подписан: существующий или новый по исследованию.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23E58A0B%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-size=%2716%27 font-family=%27Arial%27 font-weight=%27700%27 fill=%27white%27 text-anchor=%27middle%27%3EА%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/styles.css?v=1">
+<style>body{padding-top:0}.hub-grid.two{grid-template-columns:1.4fr 1fr}.hub-grid.four{grid-template-columns:repeat(4,1fr)}@media (max-width:1000px){.hub-grid.four{grid-template-columns:repeat(2,1fr)}}@media (max-width:720px){.hub-grid.two,.hub-grid.four{grid-template-columns:1fr}}</style>
+</head>
+<body>
+<div class="hub">
+  <span class="eyebrow">agbina.ru, ООО «Фирма «Агбина», сентябрь 2026</span>
+  <h1>Прототип главной страницы agbina.ru и исследование конкурентов</h1>
+  <p style="font-size:17px;color:var(--ink-2);max-width:840px;margin-top:12px">Сначала исследование: спрос по 100 фразам Wordstat (Россия и Москва), ТОП-10 Яндекса и Google по 67 запросам ниши, метрики 40 доменов, обход 26 страниц 23 конкурентов со скриншотами, инвентаризация 12 страниц agbina.ru, техаудит и CRO-аудит Addu от 22 июля 2026. Потом прототип главной, в котором каждый блок подписан: существующий или новый по результатам исследования.</p>
+
+  <div class="hub-grid two">
+    <a class="hub-card" href="prototypes/home.html"><span class="chip brand">Прототип</span><h3>Главная страница</h3><p>H1 и оффер для оптовика, полоса цифр, 11 разделов каталога с числом позиций, культуры по спросу, семена со склада с ценой за 1 000 шт и остатком, два способа покупки со сроками, скидки по обороту, производители со сроком поставки, «не только цветы», доставка и документы, почему Агбина, отзывы, новости, форма «отправить список», FAQ, контакты с картой, подвал.</p><span class="btn btn-dark">Открыть прототип</span></a>
+    <a class="hub-card" href="rationale.html" style="border-color:var(--brand);background:var(--brand-soft)"><span class="chip brand">Отдельная страница</span><h3>Обоснование блоков</h3><p>Почему добавлен каждый блок: данные исследования, скриншоты примеров у конкурентов из ТОП-10 со ссылками на их страницы, скриншоты текущего сайта «как есть» и что убрали.</p><span class="btn btn-primary">Открыть обоснование</span></a>
+  </div>
+
+  <h2 style="margin-top:36px">Как читать пометки на блоках</h2>
+  <div class="legend">
+    <div><i style="background:#6B7280"></i><span><b>Существующий блок.</b> Есть на сайте сейчас, в прототипе переработан.</span></div>
+    <div><i style="background:#15803D"></i><span><b>Новый блок: по результатам исследования.</b> Добавлен после разбора конкурентов, спроса и аудитов.</span></div>
+    <div><i style="background:linear-gradient(90deg,#6B7280 0 50%,#15803D 50% 100%)"></i><span><b>Существующий + новое.</b> Блок был, но дополнен элементами по исследованию.</span></div>
+  </div>
+  <p class="muted small">Тексты условий, скидок, сроков и брендов взяты со страниц agbina.ru дословно. Число позиций по разделам, цены и остатки, стоимость доставки, тексты отзывов и год основания в прототипе условные и помечены оранжевым: их заполняет клиент. Пометки можно скрыть кнопкой «Скрыть пометки» в верхней панели прототипа. Мобильная версия: сузьте окно браузера до 720 px или откройте с телефона.</p>
+
+  <h2 style="margin-top:36px">Главное из исследования</h2>
+  <table style="margin-top:14px">
+    <tr><th style="width:44%">Факт</th><th>Что это значит для главной</th></tr>
+    <tr><td>Сайт закрыт в robots.txt (`Disallow: /`), sitemap ведёт на технический домен, старые URL после переезда на новый шаблон отдают 404. В ТОП-10 Яндекса и Google по 67 запросам ниши (Arsenkin) agbina.ru есть только по трём брендовым запросам. При этом у сайта 1 182 ссылающихся домена по Ahrefs, у лидеров ниши 373-613</td><td>Главная должна быть посадочной под «профессиональные семена оптом» с H1, условиями и товарами: как только сайт откроют, ей есть с чем конкурировать</td></tr>
+    <tr><td>Спрос: «профессиональные семена» 20 087 показов в месяц по России, «семена оптом» 13 970, «профессиональные семена интернет магазин» 9 980, «купить семена оптом» 4 411, «профессиональные семена цветов» 1 789, «семена петунии профессиональные» 1 221</td><td>H1 «Профессиональные семена оптом для питомников, садовых центров и озеленения», культуры по спросу как быстрые входы</td></tr>
+    <tr><td>Уникальный ассортимент, которого нет у конкурентов из ТОП-10: деревья, хвойные, пальмы, саговники, кактусы, папоротники. Спрос: «семена пальм» 3 392, «семена кактусов» 2 993, «семена цикламена» 1 882, «семена суккулентов» 1 038, «семена редких растений» 360</td><td>Блок «Не только цветы» и 11 разделов каталога с числом позиций на главной</td></tr>
+    <tr><td>Брендовый спрос конкурентов выше: «белла профессиональные семена» 2 789, «соло профессиональные семена» 2 319, «семена оптом семена тут» 2 224 против «агбина» 657</td><td>Цифры компании, ассоциации ISF, Fleuroselect, АНСК, АППМ и ботанические сады на главной, а не на странице «Компания»</td></tr>
+    <tr><td>На главной сейчас: слайдер из шести сортов, четыре шаблонные иконки, 10 логотипов, незагружающаяся карта, полоса «Нужна консультация?» с текстом про «типовые проекты и расчёт стоимости услуг». Ни цены, ни условий, ни H1</td><td>Слайдер заменён первым экраном с оффером и формой списка, иконки полосой цифр, «консультация» блоком «отправить список», карта статичной картинкой</td></tr>
+    <tr><td>У конкурентов из ТОП-10: плитки категорий с числом товаров (agroopt-market.ru), товар с ценой за 100/1 000 шт и остатком (semenakupi.ru, profsemcvet.com, sibseed.ru), «7 аргументов» с цифрами (semena-tut.ru), условия опта с минимумом (semenagavrish.ru), PDF-каталог и отзывы (semco.ru), стена 48 брендов (semena-tut.ru), мессенджеры (13 из 36 страниц)</td><td>Блоки 3-6, 8, 9, 13 прототипа</td></tr>
+    <tr><td>Условия покупки разложены по четырём страницам и противоречат друг другу: предзаказ с 1 октября по 1 марта и до 60 дней против «Доставка под заказ временно приостановлена»; скидочная шкала 5/8/10/15 % без CTA; «Прейскуранты» по `/help/price/` отдают «Элемент не найден»</td><td>Блок «Как купить» с двумя путями и баннером текущего ограничения, таблица скидок с CTA, FAQ из 8 вопросов (FAQ есть только у 1 из 36 страниц конкурентов)</td></tr>
+    <tr><td>PageSpeed mobile 45/100, LCP 63 с, HTML главной 525 КБ, каталог 3,7 МБ</td><td>Первый экран без слайдера, фото сжаты, липкая панель на мобильном с телефоном и списком</td></tr>
+  </table>
+
+  <h2 style="margin-top:36px">Документы</h2>
+  <div class="legend">
+    <div><span>📄</span><a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/RESEARCH.md" style="color:var(--brand-dark);font-weight:600">research/RESEARCH.md</a><span>полное исследование: выводы, методика, спрос, выдача, метрики доменов, инвентаризация сайта и конкурентов, карта различий, рекомендации</span></div>
+    <div><span>🧩</span><a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/BLOCKS-MAP.md" style="color:var(--brand-dark);font-weight:600">research/BLOCKS-MAP.md</a><span>карта 19 блоков главной со статусом и источником каждого</span></div>
+    <div><span>🔎</span><a href="https://github.com/takedown-desing/agbina-prototype/blob/main/research/data/crawl-summary.md" style="color:var(--brand-dark);font-weight:600">research/data/crawl-summary.md</a><span>обход agbina.ru: техника, блоки главной, каталог, карточка, условия</span></div>
+    <div><span>🖼️</span><a href="https://github.com/takedown-desing/agbina-prototype/tree/main/research/screenshots" style="color:var(--brand-dark);font-weight:600">research/screenshots</a><span>скриншоты текущего сайта (12 страниц, десктоп и мобайл, полная прокрутка), нарезка «как есть» в `was/`, 26 страниц конкурентов и фрагменты блоков в `competitors/`</span></div>
+    <div><span>📊</span><a href="https://github.com/takedown-desing/agbina-prototype/tree/main/research/data" style="color:var(--brand-dark);font-weight:600">research/data</a><span>выгрузки: WordKeeper (100 фраз, Россия и Москва), Keys.so (хвосты, ТОП-10 Яндекса, ключи сайта и конкурентов), Ahrefs (метрики 40 доменов, ключи, SERP Google), PSI, матрица блоков конкурентов, Arsenkin</span></div>
+  </div>
+
+  <h2 style="margin-top:36px">Текущий сайт для сравнения</h2>
+  <div class="hub-grid four">
+    <a class="hub-card" href="research/screenshots/agbina_home_desktop.jpeg"><img src="research/screenshots/was/was-home-top.jpg" alt="" style="border-radius:8px;margin-bottom:8px" loading="lazy"><h3>Главная, верх</h3><p>Слайдер с одним сортом на слайде и кнопкой «Перейти в каталог». Без H1, оффера и условий.</p></a>
+    <a class="hub-card" href="research/screenshots/agbina_home_desktop.jpeg"><img src="research/screenshots/was/was-home-mid.jpg" alt="" style="border-radius:8px;margin-bottom:8px" loading="lazy"><h3>Главная, середина</h3><p>Четыре иконки под cookie-баннером, бренды, «Загрузка карты…».</p></a>
+    <a class="hub-card" href="research/screenshots/agbina_catalog_desktop.jpeg"><img src="research/screenshots/was/was-catalog-top.jpg" alt="" style="border-radius:8px;margin-bottom:8px" loading="lazy"><h3>Каталог сейчас</h3><p>Таблица из 11 столбцов, 220 страниц по 50 строк, 3 567 чекбоксов фильтров, 3,7 МБ.</p></a>
+    <a class="hub-card" href="research/screenshots/agbina_sroki_desktop.jpeg"><img src="research/screenshots/was/was-sroki-top.jpg" alt="" style="border-radius:8px;margin-bottom:8px" loading="lazy"><h3>Условия сейчас</h3><p>Сроки, предзаказ и «доставка под заказ приостановлена» на странице в разделе «Полезная информация».</p></a>
+  </div>
+
+  <p class="muted small" style="margin-top:28px">Фотографии сортов взяты с текущего сайта agbina.ru, логотипы производителей со страницы «Бренды», карта из статического API Яндекс Карт. Ссылки внутри прототипа ведут на якоря той же страницы: разделов каталога, карточек и прайс-листов в прототипе нет.</p>
+</div>
+</body>
+</html>

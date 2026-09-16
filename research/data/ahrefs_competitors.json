@@ -1,0 +1,204 @@
+{
+  "competitors": [
+    {
+      "competitor_domain": "picturethisai.com",
+      "domain_rating": 70.0,
+      "keywords_common": 16,
+      "keywords_competitor": 7205,
+      "keywords_target": 22,
+      "share": 0.2,
+      "traffic": 40801,
+      "pages": 4953
+    },
+    {
+      "competitor_domain": "plantarium.ru",
+      "domain_rating": 53.0,
+      "keywords_common": 13,
+      "keywords_competitor": 3154,
+      "keywords_target": 25,
+      "share": 0.4,
+      "traffic": 10499,
+      "pages": 2301
+    },
+    {
+      "competitor_domain": "seemnemaailm.com",
+      "domain_rating": 32.0,
+      "keywords_common": 10,
+      "keywords_competitor": 1161,
+      "keywords_target": 28,
+      "share": 0.8,
+      "traffic": 3185,
+      "pages": 603
+    },
+    {
+      "competitor_domain": "botanichka.ru",
+      "domain_rating": 55.0,
+      "keywords_common": 9,
+      "keywords_competitor": 43082,
+      "keywords_target": 29,
+      "share": 0.0,
+      "traffic": 272795,
+      "pages": 8854
+    },
+    {
+      "competitor_domain": "greeninfo.ru",
+      "domain_rating": 39.0,
+      "keywords_common": 7,
+      "keywords_competitor": 11159,
+      "keywords_target": 31,
+      "share": 0.0,
+      "traffic": 52178,
+      "pages": 4523
+    },
+    {
+      "competitor_domain": "adenium-doma.ru",
+      "domain_rating": 22.0,
+      "keywords_common": 5,
+      "keywords_competitor": 494,
+      "keywords_target": 31,
+      "share": 0.9,
+      "traffic": 805,
+      "pages": 352
+    },
+    {
+      "competitor_domain": "bufl.ru",
+      "domain_rating": 4.1,
+      "keywords_common": 3,
+      "keywords_competitor": 175,
+      "keywords_target": 25,
+      "share": 1.4,
+      "traffic": 471,
+      "pages": 92
+    },
+    {
+      "competitor_domain": "flowers.ua",
+      "domain_rating": 45.0,
+      "keywords_common": 3,
+      "keywords_competitor": 2957,
+      "keywords_target": 35,
+      "share": 0.1,
+      "traffic": 9617,
+      "pages": 472
+    },
+    {
+      "competitor_domain": "greenangel.ru",
+      "domain_rating": 1.2,
+      "keywords_common": 3,
+      "keywords_competitor": 3487,
+      "keywords_target": 35,
+      "share": 0.0,
+      "traffic": 22782,
+      "pages": 833
+    },
+    {
+      "competitor_domain": "nsc.ru",
+      "domain_rating": 74.0,
+      "keywords_common": 3,
+      "keywords_competitor": 3144,
+      "keywords_target": 35,
+      "share": 0.0,
+      "traffic": 9813,
+      "pages": 1491
+    },
+    {
+      "competitor_domain": "florist.ru",
+      "domain_rating": 50.0,
+      "keywords_common": 3,
+      "keywords_competitor": 4675,
+      "keywords_target": 35,
+      "share": 0.0,
+      "traffic": 22885,
+      "pages": 1041
+    },
+    {
+      "competitor_domain": "eurosamen.ru",
+      "domain_rating": 7.0,
+      "keywords_common": 2,
+      "keywords_competitor": 206,
+      "keywords_target": 22,
+      "share": 0.8,
+      "traffic": 638,
+      "pages": 137
+    },
+    {
+      "competitor_domain": "decorumplantsflowers.com",
+      "domain_rating": 50.0,
+      "keywords_common": 2,
+      "keywords_competitor": 238,
+      "keywords_target": 27,
+      "share": 0.7,
+      "traffic": 684,
+      "pages": 70
+    },
+    {
+      "competitor_domain": "plantmania.ru",
+      "domain_rating": 1.7,
+      "keywords_common": 2,
+      "keywords_competitor": 1409,
+      "keywords_target": 36,
+      "share": 0.1,
+      "traffic": 8917,
+      "pages": 651
+    },
+    {
+      "competitor_domain": "ailita-profi.ru",
+      "domain_rating": 6.0,
+      "keywords_common": 1,
+      "keywords_competitor": 51,
+      "keywords_target": 5,
+      "share": 1.7,
+      "traffic": 50,
+      "pages": 21
+    },
+    {
+      "competitor_domain": "sortseeds.ru",
+      "domain_rating": 6.0,
+      "keywords_common": 1,
+      "keywords_competitor": 116,
+      "keywords_target": 22,
+      "share": 0.7,
+      "traffic": 215,
+      "pages": 86
+    },
+    {
+      "competitor_domain": "blog-travushka.ru",
+      "domain_rating": 13.0,
+      "keywords_common": 1,
+      "keywords_competitor": 337,
+      "keywords_target": 32,
+      "share": 0.2,
+      "traffic": 1013,
+      "pages": 220
+    },
+    {
+      "competitor_domain": "la-kosta.ru",
+      "domain_rating": 1.0,
+      "keywords_common": 1,
+      "keywords_competitor": 1518,
+      "keywords_target": 37,
+      "share": 0.0,
+      "traffic": 6608,
+      "pages": 1010
+    },
+    {
+      "competitor_domain": "gardenia.net",
+      "domain_rating": 73.0,
+      "keywords_common": 0,
+      "keywords_competitor": 1074,
+      "keywords_target": 38,
+      "share": 0.0,
+      "traffic": 906,
+      "pages": 670
+    },
+    {
+      "competitor_domain": "onego.ru",
+      "domain_rating": 61.0,
+      "keywords_common": 0,
+      "keywords_competitor": 233,
+      "keywords_target": 30,
+      "share": 0.0,
+      "traffic": 787,
+      "pages": 104
+    }
+  ]
+}
